@@ -3,6 +3,7 @@ from openai import OpenAI
 import time
 from dotenv import load_dotenv
 import os
+import pandas as pd
 
 load_dotenv()
 
@@ -36,20 +37,38 @@ def createMessage(threadId, user_message):
     return thread_message
 
 def main():
-    st.title("AI Annual Report Generator")
+    st.set_page_config(layout="wide")
+    
+    with st.sidebar:
+        st.header("📊 Available CSV Files")
+        csv_files = [f for f in os.listdir('datasource') if f.endswith('.csv')]
+        
+        if csv_files:
+            for csv_file in csv_files:
+                st.subheader(f"📄 {csv_file}")
+                try:
+                    df = pd.read_csv(os.path.join('datasource', csv_file))
+                    st.dataframe(df.head(), use_container_width=True)
+                    st.markdown("---")
+                except Exception as e:
+                    st.error(f"Error loading {csv_file}: {str(e)}")
+        else:
+            st.info("💡 No CSV files found in datasource directory")
+
+    st.title("🤖 AI Annual Report Generator")
     
     if 'thread' not in st.session_state:
         st.session_state.thread = createThread()
 
     user_input = st.text_area(
-        "Enter your prompt:",
+        "✍️ Enter your prompt:",
         "Generate the narrative of Indicators for the Annual Report 2024.",
         height=100
     )
 
-    if st.button("Generate Report"):
+    if st.button("🚀 Generate Report"):
         try:
-            with st.spinner("Processing..."):
+            with st.spinner("🔄 Processing..."):
                 assistant = getAssistantById(os.getenv('ASSITANT_ID'))
                 message = createMessage(st.session_state.thread.id, user_input)
                 
@@ -66,7 +85,7 @@ def main():
                     if run_status.status == 'completed':
                         break
                     elif run_status.status == 'failed':
-                        st.error("Run failed. Please try again.")
+                        st.error("❌ Run failed. Please try again.")
                         return
                     time.sleep(1)
 
@@ -77,11 +96,11 @@ def main():
                 for message in messages.data:
                     if message.role == "assistant":
                         st.markdown(message.content[0].text.value)
-                        st.success("Report generated successfully!")
+                        st.success("✨ Report generated successfully!")
                         break
 
         except Exception as e:
-            st.error(f"An error occurred: {str(e)}")
+            st.error(f"❌ An error occurred: {str(e)}")
 
 if __name__ == '__main__':
     main()
