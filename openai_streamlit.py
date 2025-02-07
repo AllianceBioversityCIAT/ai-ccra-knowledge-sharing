@@ -4,6 +4,7 @@ import time
 from dotenv import load_dotenv
 import os
 import pandas as pd
+import pyperclip
 
 load_dotenv()
 
