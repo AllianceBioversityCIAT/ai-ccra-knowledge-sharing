@@ -1,11 +1,16 @@
 import streamlit as st
 from openai import OpenAI
 import time
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 client = OpenAI(
-    organization='',
-    api_key=''
+    organization=os.getenv('OPENAI_ORGANIZATION_ID'),
+    api_key=os.getenv('OPENAI_API_KEY')
 )
+
 
 def allAssistant():
     return client.beta.assistants.list(
@@ -45,7 +50,7 @@ def main():
     if st.button("Generate Report"):
         try:
             with st.spinner("Processing..."):
-                assistant = getAssistantById("asst_nh6m5rlAZswQKVX2wYuYgnbu")
+                assistant = getAssistantById(os.getenv('ASSITANT_ID'))
                 message = createMessage(st.session_state.thread.id, user_input)
                 
                 run = client.beta.threads.runs.create(
