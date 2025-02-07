@@ -95,7 +95,13 @@ def main():
 
                 for message in messages.data:
                     if message.role == "assistant":
-                        st.markdown(message.content[0].text.value)
+                        response_text = message.content[0].text.value
+                        output_container = st.container()
+                        with output_container:
+                            st.markdown(response_text)
+                            if st.button("📋 Copy Output"):
+                                pyperclip.copy(response_text)
+                                st.toast('Text copied to clipboard! ✨')
                         st.success("✨ Report generated successfully!")
                         break
 
