@@ -142,7 +142,7 @@ def main():
             st.subheader("⬆️ Upload to Vector Store")
             vector_store_files = st.file_uploader(
                 "Upload files to vector store",
-                type=["csv", "txt", "pdf"],
+                type=["json", "txt", "pdf"],
                 accept_multiple_files=True,
                 key="vector_store_upload"
             )
