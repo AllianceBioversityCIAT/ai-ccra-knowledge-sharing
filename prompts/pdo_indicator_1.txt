@@ -1,0 +1,67 @@
+You are tasked with generating the narrative text for PDO Indicator 1 for the AICCRA Annual Report 2024 (for submission to the World Bank). The narrative must follow the style and structure of the AICCRA Annual Report 2023 and explain how “AICCRA Partners and Stakeholders in the Project Area are Increasingly Accessing Enhanced Climate Information Services and/or Validated Climate-Smart Agriculture Technologies.”
+
+You have two JSON data sources available:
+
+    Indicators_Numerical_2024.json:
+        Contains records with the keys: name_indicator, Overall_target, Overall_achieved, and Achievement_Percentage.
+        Filter by the indicator name:
+        "PDO Indicator 1: AICCRA partners and stakeholders in the project area are increasingly accessing enhanced climate information services and/or validated climate-smart agriculture technologies."
+        Use this to extract the overall numerical data.
+
+    PDOs.json:
+        Contains records with the keys: Name_indicator, Cluster, and Achieved_narrative.
+        Filter by the same indicator name to extract the achieved narratives.
+
+    PDO 1_Narrative.txt
+	Contains example of the before Annual report, only take into account the structure not the content and filter by PDO Indicator 1. 
+
+Your task is to produce a narrative that includes the following elements:
+
+    Introduction/Overview:
+        Clearly state the indicator and its purpose.
+
+    Overall Numerical Summary:
+        Provide a narrative that includes the overall target, the overall achieved number, and the achievement percentage (e.g., “By the end of 2024, AICCRA targeted [Overall_target] partners/stakeholders and reached [Overall_achieved], achieving [Achievement_Percentage]% of the target.”).
+
+    Institution Types Engaged:
+
+        Include a list of the types of institutions engaged, such as:
+        • National Meteorological Services
+        • National and Regional Agricultural Research Institutes
+        • National Extension Systems
+        • Private Sector Entities and SMEs
+        • Ministries of Agriculture
+        • Media Organizations
+        • Universities and Higher Education Institutions
+        • Regional Climate Centers
+        • Youth Organizations
+        • Farmer Cooperatives and Producer Organizations
+        • NGOs and Development Partners
+
+        This list should be extracted from and/or confirmed by the achieved narratives. If additional types are mentioned, include them as well.
+
+    Cluster-Level Achievements:
+        Do not group clusters together. Each cluster must be presented in its own section/paragraph. Create separate sections for each of the following clusters:
+Senegal
+Ghana
+Zambia
+Mali
+Kenya
+Ethiopia
+EA
+WA
+Theme 1
+Theme 2
+Theme 3
+Theme 4
+
+        For each cluster (don't summarise the thematics clusters), use the corresponding achieved narrative from PDOs.json filtering by the PDO Indicator 1, ensure that you are applying the correct filter between the indicator and the cluster. Write a detailed paragraphs (1 or 2) that describes the specific activities, partnerships, and qualitative impacts (e.g., capacity building, digital advisory tools, policy integration, spillover effects, etc.) for that cluster, don't summarise relevant information about the institutions, mentioned always aspects that impact the project AICCRA (Take into account for all clusters even the Theme 1, 2, 3 and 4).
+
+    Conclusion:
+        Generate a narrative how the overall achievements and the separate, detailed cluster-level successes demonstrate AICCRA’s effectiveness in expanding access to enhanced CIS and CSA technologies and in strengthening climate resilience in agriculture with based of each achieved_narrative.
+
+Important:
+
+    Don't summarise of all, give me the all relevant details of each cluster in the PDO Indicator 1
+    Do not combine or group clusters into one summary. Each cluster (12) must have its own clearly delineated section.
+    The final output should be a single cohesive text in plain language, written in a formal and professional tone suitable for submission to the World Bank.

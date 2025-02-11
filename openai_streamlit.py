@@ -64,6 +64,19 @@ def update_assistant_metadata(assistant_id, instruction, temperature=1):
         temperature=temperature,
     )
 
+def read_prompt_file(indicator_key):
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    prompt_path = os.path.join(base_dir, "prompts", f"{indicator_key}.txt")
+    print(f"Looking for prompt file at: {prompt_path}")
+    try:
+        with open(prompt_path, 'r') as file:
+            data = file.read().strip()
+            print(f"Found prompt content: {data}")
+            return data
+    except FileNotFoundError:
+        print(f"Prompt file not found at: {prompt_path}")
+        return f"Generate the narrative for {indicator_key} for the Annual Report 2024."
+
 def main():
     st.set_page_config(
         layout="wide",
@@ -161,7 +174,8 @@ def main():
         prompt = st.text_area(
             "✍️ Prompt",
             "Generate the narrative of Indicators for the Annual Report 2024.",
-            height=100
+            height=200,
+            disabled=True
         )
 
     with main_content:
@@ -177,13 +191,44 @@ def main():
         3. 🚀 Click 'Generate Report' to create your narrative
         """)
 
+        indicators = [
+            {"key": "pdo_indicator_1", "value": "PDO Indicator 1"},
+            {"key": "pdo_indicator_2", "value": "PDO Indicator 2"},
+            {"key": "pdo_indicator_3", "value": "PDO Indicator 3"},
+            {"key": "pdo_indicator_4", "value": "PDO Indicator 4"},
+            {"key": "pdo_indicator_5", "value": "PDO Indicator 5"},
+            {"key": "ipi_1_1", "value": "IPI 1.1"},
+            {"key": "ipi_1_2", "value": "IPI 1.2"},
+            {"key": "ipi_1_3", "value": "IPI 1.3"},
+            {"key": "ipi_1_4", "value": "IPI 1.4"},
+            {"key": "ipi_2_1", "value": "IPI 2.1"},
+            {"key": "ipi_2_2", "value": "IPI 2.2"},
+            {"key": "ipi_2_3", "value": "IPI 2.3"},
+            {"key": "ipi_3_1", "value": "IPI 3.1"},
+            {"key": "ipi_3_2", "value": "IPI 3.2"},
+            {"key": "ipi_3_3", "value": "IPI 3.3"},
+            {"key": "ipi_3_4", "value": "IPI 3.4"},
+        ]
+        
+        selected_indicator = st.selectbox(
+            "Select Indicator",
+            ["Select an indicator..."] + [ind["value"] for ind in indicators],
+            index=0
+        )
+
+        selected_key = next(
+            (ind["key"] for ind in indicators if ind["value"] == selected_indicator),
+            None
+        )
+
         if 'thread' not in st.session_state:
             st.session_state.thread = create_thread()
         
-        user_input = prompt
-        print(user_input)
+        user_input = read_prompt_file(selected_key) if selected_key else prompt
+        prompt = user_input
+        print('🚀 ------------------------------------', user_input)
 
-        if st.button("🚀 Generate Report"):
+        if st.button("🚀 Generate Report", disabled=(selected_indicator == "Select an indicator...")):
             try:
                 with st.spinner("🔄 Processing..."):
                     assistant = get_assistant_by_id(os.getenv('ASSISTANT_ID'))
