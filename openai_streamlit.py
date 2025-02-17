@@ -307,19 +307,27 @@ def main():
         st.title("🤖 AI-CCRA Annual Report Generator 2024")
 
         st.markdown("""
-        This tool helps you generate comprehensive narratives for the 2024 Annual Report. 
-        It uses AI to analyze your data and create detailed reports based on the indicators.
+        Welcome to the AI-CCRA Annual Report Generator! 🌟
+
+        This intelligent tool streamlines the creation of your 2024 Annual Report narratives by:
+        - 📊 Analyzing your uploaded data and documents
+        - 🤖 Leveraging AI to generate comprehensive indicator reports
+        - ✨ Ensuring consistency across all narratives
         
-        **Cómo usar:**
-        1. 📁 Upload your data files from the sidebar (⚙️)
-        2. ✍️ Customize the prompt if necessary or use the one assigned to the indicator.
-        3. 🚀 Click on 'Generate Report' to create your narrative
+        **Getting Started:**
+        1. Select an indicator from the dropdown menu below
+        2. Review the generated narrative
+        3. Copy and refine the output as needed
         """)
 
-        # Aquí se utiliza la lista global INDICATORS en vez de una variable local
+        # Get existing prompts
+        existing_prompts = set(list_prompt_files())
+        # Filter indicators that have prompt files
+        available_indicators = [ind["value"] for ind in INDICATORS if ind["key"] in existing_prompts]
+        
         selected_indicator = st.selectbox(
             "Select Indicator",
-            ["Select an indicator..."] + [ind["value"] for ind in INDICATORS],
+            ["Select an indicator..."] + available_indicators,
             index=0
         )
 

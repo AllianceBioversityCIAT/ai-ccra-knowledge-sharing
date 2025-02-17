@@ -1,31 +1,40 @@
-You are tasked with generating the narrative text for PDO Indicator 1 for the AICCRA Annual Report 2024 (for submission to the World Bank). The narrative must follow the style and structure of the AICCRA Annual Report 2023 and explain how “AICCRA Partners and Stakeholders in the Project Area are Increasingly Accessing Enhanced Climate Information Services and/or Validated Climate-Smart Agriculture Technologies.”
-
-You have two JSON data sources available:
-
-    Indicators_Numerical_2024.json:
-        Contains records with the keys: name_indicator, Overall_target, Overall_achieved, and Achievement_Percentage.
-        Filter by the indicator name:
-        "PDO Indicator 1: AICCRA partners and stakeholders in the project area are increasingly accessing enhanced climate information services and/or validated climate-smart agriculture technologies."
-        Use this to extract the overall numerical data.
-
-    PDOs.json:
-        Contains records with the keys: Name_indicator, Cluster, and Achieved_narrative.
-        Filter by the same indicator name to extract the achieved narratives.
-
-    PDO 1_Narrative.txt
-	Contains example of the before Annual report, only take into account the structure not the content and filter by PDO Indicator 1. 
-
-Your task is to produce a narrative that includes the following elements:
-
-    Introduction/Overview:
-        Clearly state the indicator and its purpose.
-
-    Overall Numerical Summary:
-        Provide a narrative that includes the overall target, the overall achieved number, and the achievement percentage (e.g., “By the end of 2024, AICCRA targeted [Overall_target] partners/stakeholders and reached [Overall_achieved], achieving [Achievement_Percentage]% of the target.”).
-
-    Institution Types Engaged:
-
-        Include a list of the types of institutions engaged, such as:
+# Role & Task Definition:
+You are tasked with generating the narrative text for PDO Indicator 1 in the AICCRA Annual Report 2024, which will be submitted to the World Bank.
+## Objective:
+Your goal is to craft a cohesive, structured, and data-driven narrative that highlights how "AICCRA Partners and Stakeholders in the Project Area are Increasingly Accessing Enhanced Climate Information Services (CIS) and/or Validated Climate-Smart Agriculture (CSA) Technologies."
+---
+Having into account this meausures to put in the Overall Numerical Summary:
+[Total Target] = 33
+[Total_Achieved] = 81
+[Percentage] = Calculate(81/33)
+ 
+---
+## You have two JSON data sources available:
+### PDO1_Contributions.json:
+Contains data on the achievements and contributions of various clusters under PDO Indicator 1, which tracks how partners and stakeholders access enhanced Climate Information Services (CIS) and Climate-Smart   Agriculture (CSA) indicators. Each entry includes:
+        Cluster (Region or Thematic Area)
+        Targeted number of partners (Target_year_by_PMC)
+        Actual number of partners achieved (End_year_achieved)
+        Achieved_narrative: A detailed explanation of how CIS and CSA access has improved, including new partnerships, policy changes, training      programs, digital tools, and innovations.
+### PDO1_Additional_question.json:
+    
+Contains responses to two questions related to PDO Indicator 1, which tracks how partners and stakeholders  are accessing enhanced Climate  Information Services (CIS) and Climate-Smart Agriculture (CSA) indicators.  The data is organized by clusters (regions or thematic areas) and   includes information on new partnerships (Question 1) and how existing partners have improved their access to CIS and CSA (Question 2).
+    
+---
+## Introduction/Overview:
+    
+Clearly state the indicator and its purpose.
+## Overall Numerical Summary:
+    
+Provide a narrative that includes the overall target, the overall achieved number, and the achievement  percentage (e.g., "By the end of 2024,    AICCRA targeted the of [Total Target]  for all cluster) partners/stakeholders and reached [Total_Achieved], achieving [Percentage]% of the target."). This information will be extracted from the PDO1_Contributions.json.
+   
+## New Partners in clusters
+Extract and quantify the number of new partners or stakeholders that have joined. This will be extracted from the column Answer in the file PDO1_Additional_question.json, filtered by Question "1. Out of the total target reported for PDO 1, how many partners or stakeholders are expected to be new (joined after the start date of AICCRA Additional Financing [19/03/2024])?".
+## INCREASE in access to CIS and CSA in clusters
+Additionally, Extract key insights from the responses provided for Question "2. For each reported partner or stakeholder which is not new, how do you expect the INCREASE in access to CIS and CSA  compared to previous years (e.g. improvement on CIS platform, demonstrate of increased access to CSA such as enhanced scaling and dissemination approaches)?" (extract this   information from PDO1_Additional_question.json) across  different clusters in the dataset.
+Focus on identifying the main strategies, improvements, and  expansions that contributed to increased access to  Climate Information Services (CIS) and Climate-Smart Agriculture (CSA).
+## Institution Types Engaged:
+    Include a list of the types of institutions engaged, such as:
         • National Meteorological Services
         • National and Regional Agricultural Research Institutes
         • National Extension Systems
@@ -37,31 +46,36 @@ Your task is to produce a narrative that includes the following elements:
         • Youth Organizations
         • Farmer Cooperatives and Producer Organizations
         • NGOs and Development Partners
-
-        This list should be extracted from and/or confirmed by the achieved narratives. If additional types are mentioned, include them as well.
-
-    Cluster-Level Achievements:
-        Do not group clusters together. Each cluster must be presented in its own section/paragraph. Create separate sections for each of the following clusters:
-Senegal
-Ghana
-Zambia
-Mali
-Kenya
-Ethiopia
-EA
-WA
-Theme 1
-Theme 2
-Theme 3
-Theme 4
-
-        For each cluster (don't summarise the thematics clusters), use the corresponding achieved narrative from PDOs.json filtering by the PDO Indicator 1, ensure that you are applying the correct filter between the indicator and the cluster. Write a detailed paragraphs (1 or 2) that describes the specific activities, partnerships, and qualitative impacts (e.g., capacity building, digital advisory tools, policy integration, spillover effects, etc.) for that cluster, don't summarise relevant information about the institutions, mentioned always aspects that impact the project AICCRA (Take into account for all clusters even the Theme 1, 2, 3 and 4).
-
-    Conclusion:
-        Generate a narrative how the overall achievements and the separate, detailed cluster-level successes demonstrate AICCRA’s effectiveness in expanding access to enhanced CIS and CSA technologies and in strengthening climate resilience in agriculture with based of each achieved_narrative.
-
-Important:
-
-    Don't summarise of all, give me the all relevant details of each cluster in the PDO Indicator 1
-    Do not combine or group clusters into one summary. Each cluster (12) must have its own clearly delineated section.
-    The final output should be a single cohesive text in plain language, written in a formal and professional tone suitable for submission to the World Bank.
+    
+This list should be extracted from and/or confirmed by the achieved narratives. If additional types are mentioned, include them as well.
+## Cluster-Level Achievements:
+Do not group clusters together. Each cluster must be presented in its own section/paragraph. Create separate sections for each of the following clusters:
+    Senegal (Ensure to put the VALUE of End_year_achieved in the narrative)
+    Ghana (Ensure to put the VALUE of End_year_achieved in the narrative)
+    Zambia (Ensure to put the VALUE of End_year_achieved in the narrative)
+    Mali (Ensure to put the VALUE of End_year_achieved in the narrative)
+    Kenya (Ensure to put the VALUE of End_year_achieved in the narrative)
+    Ethiopia (Ensure to put the VALUE of End_year_achieved in the narrative)
+    EA (Ensure to put the VALUE of End_year_achieved in the narrative)
+    WA (Ensure to put the VALUE of End_year_achieved in the narrative)
+    Theme 1 (Ensure to put the VALUE of End_year_achieved in the narrative)
+    Theme 2 (Ensure to put the VALUE of End_year_achieved in the narrative)
+    Theme 3 (Ensure to put the VALUE of End_year_achieved in the narrative)
+    Theme 4 (Ensure to put the VALUE of End_year_achieved in the narrative)
+For each cluster Ensure to put the VALUE of End_year_achieved in the narrative (don't summarise the thematics clusters), use the corresponding [Achieved_narrative] from PDO1_Contributions.json and put the [End_year_achieved] (Ensure put the number for each cluster, Senegal, Ghana, Zambia, Mali, Kenya, Ethiopia, EA, WA, Theme 1, Theme 2, Theme 3, Theme 4). Put the information from the PDO1_Additional_question.json file, filtering by Question choosing the value "1. Out of the total target reported for PDO 1, how many partners or stakeholders are expected to be new (joined after the start date of AICCRA Additional Financing [19/03/2024])?" and calculate or describe how many partners or stakeholders are expected to be new (extract from this text).
+Write a detailed paragraphs that describes the specific activities, partnerships, and qualitative impacts (e.g., capacity building, digital advisory tools, policy integration, spillover effects, etc.) for that cluster.
+WARNING: End_year_achieved, just mentioned in the narrative
+--- 
+# Conclusion:
+Generate a narrative how the overall achievements and the separate, detailed cluster-level successes demonstrate AICCRA's effectiveness in expanding access to enhanced CIS and CSA technologies and in strengthening climate resilience in agriculture with based of each achieved_narrative.
+# Important:
+- Don't summarise of all, give me the all relevant details of each cluster in the PDO Indicator 1
+- Do not combine or group clusters into one summary. Each cluster (12) must have its own clearly delineated section.
+- The final output should be a single cohesive text in plain language, written in a formal and professional tone suitable for submission to the World Bank.
+- Don't reference to the sources in the output.
+- Ensure you put the following sections:
+    - Introduction/Overview:
+    - Overall Numerical Summary:
+    - Institution Types Engaged:
+    - New Partners:
+    - Cluster-Level Achievements
