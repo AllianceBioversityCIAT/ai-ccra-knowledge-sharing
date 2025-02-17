@@ -1,15 +1,23 @@
 import streamlit as st
-from openai import OpenAI
 import time
-from dotenv import load_dotenv
 import os
 import pyperclip
+from openai import OpenAI
+from dotenv import load_dotenv
+from streamlit_modal import Modal
 
 load_dotenv()
 
 client = OpenAI(
     organization=os.getenv('OPENAI_ORGANIZATION_ID'),
     api_key=os.getenv('OPENAI_API_KEY')
+)
+
+modal = Modal(
+    "Edit Prompt",
+    key="edit-prompt-modal",
+    padding=20,
+    max_width=800
 )
 
 # ---------------------------
@@ -235,6 +243,7 @@ def main():
                     col1.markdown(f"**{key}**")
                     if col2.button("Edit", key=f"edit_prompt_{key}"):
                         st.session_state.editing_prompt = key
+                        modal.open()
                     if col3.button("🗑️", key=f"delete_prompt_{key}"):
                         try:
                             os.remove(os.path.join(get_prompts_dir(), f"{key}.txt"))
@@ -269,15 +278,27 @@ def main():
     # ===========================
     # Modal para editar un prompt (se abre si se presionó "Editar")
     # ===========================
-    if "editing_prompt" in st.session_state:
-        key_to_edit = st.session_state.editing_prompt
-        with st.expander(f"Edit prompt: {key_to_edit}"):
-            new_content = st.text_area("Contents of the prompt", value=read_prompt_file(key_to_edit))
-            if st.button("Save changes", key=f"save_{key_to_edit}"):
-                save_prompt_file(key_to_edit, new_content)
-                st.success("Prompt updated!")
-                del st.session_state.editing_prompt
-                st.rerun()
+    if modal.is_open():
+        with modal.container():
+            if "editing_prompt" in st.session_state:
+                key_to_edit = st.session_state.editing_prompt
+                st.subheader(f"Editing prompt: {key_to_edit}")
+                new_content = st.text_area(
+                    "Contents of the prompt",
+                    value=read_prompt_file(key_to_edit),
+                    height=400
+                )
+                col1, col2 = st.columns([1, 4])
+                if col1.button("Save changes", key=f"save_{key_to_edit}"):
+                    save_prompt_file(key_to_edit, new_content)
+                    st.success("Prompt updated!")
+                    del st.session_state.editing_prompt
+                    modal.close()
+                    st.rerun()
+                if col2.button("Cancel", key="cancel_edit"):
+                    del st.session_state.editing_prompt
+                    modal.close()
+                    st.rerun()
 
     # ===========================
     # CONTENIDO PRINCIPAL
