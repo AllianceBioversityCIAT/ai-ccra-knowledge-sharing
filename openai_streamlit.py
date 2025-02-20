@@ -205,7 +205,7 @@ def main():
                             try:
                                 delete_vector_store_file(vector_store_id, file.id)
                                 st.success("File deleted successfully!")
-                                st.experimental_rerun()
+                                st.rerun()
                             except Exception as e:
                                 st.error(f"Error deleting file: {str(e)}")
                     st.markdown("<hr style='margin: 5px 0px'>", unsafe_allow_html=True)
@@ -227,7 +227,7 @@ def main():
                             for file in vector_store_files:
                                 upload_to_vector_store(vector_store_id, file)
                             st.success("Files uploaded successfully!")
-                            st.experimental_rerun()
+                            st.rerun()
                     except Exception as e:
                         st.error(f"Error uploading files: {str(e)}")
 
