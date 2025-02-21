@@ -1,0 +1,72 @@
+# Role & Task Definition:
+You are tasked with generating the narrative text for PDO Indicator 5 in the AICCRA Annual Report 2024, which will be submitted to the World Bank.
+
+## Objective:
+Your goal is to craft a cohesive, structured, and data-driven narrative that highlights how “Beneficiaries with enhanced resilience to climate risks (Number).” (PDO Indicator 5).
+
+---
+Having into account this meausures to put in the Overall Numerical Summary:
+
+[Total Target] = 2347791
+[Total_Achieved] = 3982841
+
+[Percentage] = Calculate(3982841/2347791)
+
+---
+## You have two JSON data sources available:
+
+### PDO5_Contributions.json:
+Contains data on the achievements and contributions of various clusters under PDO Indicator 5: Beneficiaries with enhanced resilience to climate risks (Number). Each entry includes:
+
+        Cluster (Region or Thematic Area)
+        Targeted number of partners (Target_year_by_PMC)
+        Actual number of partners achieved (End_year_achieved)
+        Achieved_narrative: A detailed explanation of how CIS and CSA access has improved, including new partnerships, policy changes, training      programs, digital tools, and innovations.
+
+### PDO5_Additional_question.json:
+	Contains responses to four questions related to PDO Indicator 5, which tracks about Beneficiaries with enhanced resilience to climate risks 
+It includes details on:
+Note: Please indicate the factor that you expect to use to estimate the number of indirect beneficiaries (i.e. by which number have you multiplied PDO2?). Please explain the rationale behind that, citing supporting, evidence, if possible.
+
+---
+## Introduction/Overview:
+    
+Clearly state the indicator and its purpose.
+
+## Overall Numerical Summary:
+	Provide a narrative that includes the overall target, the overall achieved number, and the achievement 	percentage (e.g., “By the end of 2024, 	AICCRA targeted the of 	[Total Target]  for all cluster) partners/stakeholders and reached [Total_Achieved], achieving [Total Target]/[Total_Achieved]% of the 	target.”). This information will be extracted from the PDO4_Contributions.json. 
+	From PDO5_Additional_question.json extract the responses for each cluster. Focus on the narratives answering these four questions and create a narrative for each cluster that contains:
+1. Name the likely country to be reported in future years, if known
+Note:  Number and name of country expected to be reported this year. For each country, provide the climate information services and/ or validated climate-smart agriculture technologies that are expected to be accessible (if this last information is not provided the country will not be counted against the target). This combination, or 'pairing' needs to be reported. 'Pairing' refers to unique instances where AICCRA technology/information/service originating from one AICCRA core country is observed to occur in another country, thereby creating a 'pair' between country and technology/information/service. (e.g. 1. Benin - i. improved NextGen approach for seasonal and sub-seasonal climate forecasting; ii. communicating uncertainties in seasonal climate forecast; iii. CIS and CSA curricula.)
+
+
+## Cluster-Level Achievements:
+Do not group clusters together. Each cluster must be presented in its own section/paragraph. Create separate sections for each of the following clusters:
+
+Senegal (Ensure to put the VALUE of End_year_achieved (from PDO5_Contributions.json) in the narrative)
+Ghana (Ensure to put the VALUE of End_year_achieved (from PDO5_Contributions.json) in the narrative)
+Zambia (Ensure to put the VALUE of End_year_achieved (from PDO5_Contributions.json) in the narrative)
+Mali (Ensure to put the VALUE of End_year_achieved (from PDO5_Contributions.json) in the narrative)
+Kenya (Ensure to put the VALUE of End_year_achieved (from PDO5_Contributions.json) in the narrative)
+Ethiopia (Ensure to put the VALUE of End_year_achieved (from PDO5_Contributions.json) in the narrative)
+
+
+For each cluster Ensure to put the VALUE of End_year_achieved in the narrative (don't summarise the thematics clusters), use the corresponding [Achieved_narrative] from PDO5_Contributions.json and put the [End_year_achieved] (Ensure put the number for each cluster, Senegal, Ghana, Zambia, Mali, Kenya, Ethiopia).
+
+Extract by cluster the insights from the PDO5_Additional_question.json filtering by Cluster que column :
+Note: Please indicate the factor that you expect to use to estimate the number of indirect beneficiaries (i.e. by which number have you multiplied PDO2?). Please explain the rationale behind that, citing supporting, evidence, if possible.
+
+
+--- 
+# Conclusion:
+Generate a narrative how the overall achievements and the separate, detailed cluster-level demonstrate Beneficiaries in the project area are increasingly accessing enhanced climate information services and/or validated climate-smart agriculture technologies.
+
+# Important:
+- Don't summarise of all, give me the all relevant details of each cluster in the PDO Indicator 5
+- Do not combine or group clusters into one summary. Each cluster (8) must have its own clearly delineated section.
+- The final output should be a single cohesive text in plain language, written in a formal and professional tone suitable for submission to the World Bank.
+- Don't reference to the sources in the output.
+- Ensure you put the following sections:
+    - Introduction/Overview:
+    - Overall Numerical Summary:
+    - Cluster-Level Achievements
