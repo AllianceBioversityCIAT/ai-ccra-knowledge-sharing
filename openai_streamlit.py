@@ -2,7 +2,7 @@ import streamlit as st
 import time
 import os
 import pyperclip
-import glob
+import glob2
 from openai import OpenAI
 from dotenv import load_dotenv
 from streamlit_modal import Modal
@@ -95,7 +95,7 @@ def load_indicator_documents(folder_path):
     supported_extensions = ['.json', '.txt', '.pdf']
     files = []
     for ext in supported_extensions:
-        files.extend(glob.glob(os.path.join(folder_path, f"*{ext}")))
+        files.extend(glob2.glob(os.path.join(folder_path, f"*{ext}")))
     return files
 
 def clear_and_load_indicator_documents(vector_store_id, folder_path):
