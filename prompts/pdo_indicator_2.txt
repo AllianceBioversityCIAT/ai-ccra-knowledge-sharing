@@ -12,7 +12,7 @@ Having into account this meausures to put in the Overall Numerical Summary:
 ---
 ## You have two JSON data sources available:
 ### PDO2_Contributions.json:
-Contains data on the achievements and contributions of various clusters under PDO Indicator 1, which tracks how partners and stakeholders access enhanced Climate Information Services (CIS) and Climate-Smart   Agriculture (CSA) indicators. Each entry includes:
+Contains data on the achievements and contributions of various clusters under PDO Indicator 2, which tracks about Beneficiaries in the project area are increasingly accessing enhanced climate information services and/or validated climate-smart agriculture technologies. (Numbers)​. Each entry includes:
         Cluster (Region or Thematic Area)
         Targeted number of partners (Target_year_by_PMC)
         Actual number of partners achieved (End_year_achieved)

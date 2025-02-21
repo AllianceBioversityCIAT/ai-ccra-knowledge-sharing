@@ -2,7 +2,7 @@
 You are tasked with generating the narrative text for IPI 3.1: Validated climate information services and climate-smart agriculture technologies disseminated / made accessible (Number)
  
 ## Objective:
-Your goal is to craft a cohesive, structured, and data-driven narrative that highlights about "Gender-smart climate information services and gender-smart climate-smart agriculture technologies reaching women through customized programs targeting their interests (Number) "
+Your goal is to craft a cohesive, structured, and data-driven narrative that highlights about "Validated climate information services and climate-smart agriculture technologies disseminated / made accessible "
 ---
 Having into account this meausures to put in the Overall Numerical Summary:
 [Total Target] = 20
@@ -14,7 +14,7 @@ Having into account this meausures to put in the Overall Numerical Summary:
 ---
 ## You have two JSON data sources available:
 ### IPI_3.1_Contributions.json :
-Contains data on the achievements and contributions of various clusters under IPI 3.1: Gender-smart climate information services and gender-smart climate-smart agriculture technologies reaching women through customized programs targeting their interests. Each entry includes:
+Contains data on the achievements and contributions of various clusters under IPI 3.1: Validated climate information services and climate-smart agriculture technologies disseminated / made accessible . Each entry includes:
         Cluster (Region or Thematic Area)
         Targeted number of partners (Target_year_by_PMC)
         Actual number of partners achieved (End_year_achieved)

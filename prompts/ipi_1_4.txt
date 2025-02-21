@@ -7,10 +7,10 @@ Your goal is to craft a cohesive, structured, and data-driven narrative that hig
 ---
 Having into account this meausures to put in the Overall Numerical Summary:
 
-[Total Target] = 38890
-[Total_Achieved] = 200000
+[Total Target] = 200000
+[Total_Achieved] = 38890
 
-[Percentage] = Calculate(200000/38890)
+[Percentage] = Calculate(38890/200000)
 
 ---
 ## You have two JSON data sources available:
@@ -38,12 +38,7 @@ Clearly state the indicator and its purpose.
 ## Overall Numerical Summary:
 	Provide a narrative that includes the overall target, the overall achieved number, and the achievement 	percentage (e.g., “By the end of 2024, 	AICCRA targeted the of 	[Total Target]  for all cluster) partners/stakeholders and reached [Total_Achieved], achieving [Total Target]/[Total_Achieved]% of the 	target.”). This information will be extracted from the IPI 1.4_Contributions.json. 
 	From IPI 1.4_Additional_question.json extract the responses for each cluster. Focus on the narratives answering these four questions and create a narrative for each cluster that contains:
-1. Reference the knowledge products listed in the main narrative that are expected to be gender-sensitive and explain  how gender considerations are dealt with (e.g. 1- Gender-responsive infographic on pesticide use- examples tailored to women crop and schedule; 2-....)
-2. Reference the knowledge products listed in the main narrative that are expected to address other social inclusion dimensions, and explain how those issues are dealt with. (e.g. 1 - Socially-equitable agro-advisory app- visualization  options for those with impaired vision: 2- ....)
-3. Reference  the knowledge products listed in the main narrative that are expected to be led by a regional partner PPAs (AGRHYMET, ASARECA, CCARDESA, CORAF, ICPAC, and RUFORUM)
-4. Reference  the knowledge products listed in the main narrative that are expected to be "just-in-time" or driven by parter requests. Explain how the knowledge products are expected to contribute to a change (e.g. policy, straregy, plans, capacity, innovation use, investments).
-Note: Number and name the knowledge products/ decision making tools and advisory services expected to be reported this year end (e.g. 1- Policy brief on CoP for pastoralist; 2- Infonote on pesticide use; 3-..)
-
+Note: Which fertilizer requirements are expected to be developed, and for which areas? ( e.g. Fertilizer requirement for  1-Cocoa, Ghana, 2- Peanuts, Senegal...)
 
 
 ## Cluster-Level Achievements:

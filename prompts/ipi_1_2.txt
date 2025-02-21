@@ -9,7 +9,7 @@ Your goal is to craft a cohesive, structured, and data-driven narrative that hig
 ## You have two JSON data sources available:
 
 ### IPI_1.2_Contributions.json:
-Contains data on the achievements and contributions of various clusters under IPI 1.1: Climate-relevant knowledge products, decision-making tools and advisory services created or enhanced, including GSI dimensions (Number)​. Each entry includes:
+Contains data on the achievements and contributions of various clusters under IPI 1.2: Regional Hub for Fertilizers and Soil Health established​. Each entry includes:
 
         Cluster (Region or Thematic Area)
         Targeted number of partners (Target_year_by_PMC)
@@ -24,7 +24,7 @@ Contains data on the achievements and contributions of various clusters under IP
 Clearly state the indicator and its purpose.
 
 ## Overall Numerical Summary:
-	Provide a narrative that includes the overall target, the overall achieved number, and the achievement 	percentage (e.g., “By the end of 2024, 	AICCRA targeted the of 	[Total Target]  for all cluster) partners/stakeholders and reached [Total_Achieved], achieving [Total Target]/[Total_Achieved]% of the 	target.”). This information will be extracted from the PDO4_Contributions.json. 
+	Provide a narrative that includes the overall target, the overall achieved number, and the achievement 	percentage (e.g., “By the end of 2024, 	AICCRA targeted the of 	[Total Target]  for all cluster) partners/stakeholders and reached [Total_Achieved], achieving [Total Target]/[Total_Achieved]% of the 	target.”). This information will be extracted from the IPI_1.2_Contributions.json. 
 
 
 
