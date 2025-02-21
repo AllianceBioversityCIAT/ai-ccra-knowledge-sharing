@@ -447,49 +447,49 @@ def main():
                 except Exception as e:
                     st.error(f"❌ An error occurred: {str(e)}")
             
-            indicator = selected_info["value"]
-            disemination_prompt = read_prompt_file("disemination")
-            user_input = f"From {indicator} extract: {disemination_prompt}"
+            # indicator = selected_info["value"]
+            # disemination_prompt = read_prompt_file("disemination")
+            # user_input = f"From {indicator} extract: {disemination_prompt}"
 
-            if st.button('🔗 Generate evidence of Deliverables 🚧'):
-                try:
-                    with st.spinner("🔄 Processing..."):
-                        if 'thread' not in st.session_state:
-                            st.session_state.thread = create_thread()
+            # if st.button('🔗 Generate evidence of Deliverables 🚧'):
+            #     try:
+            #         with st.spinner("🔄 Processing..."):
+            #             if 'thread' not in st.session_state:
+            #                 st.session_state.thread = create_thread()
                     
-                        assistant = get_assistant_by_id(os.getenv('ASSISTANT_ID'))
-                        create_message(st.session_state.thread.id, user_input)
-                        stream = client.beta.threads.runs.create(
-                            thread_id=st.session_state.thread.id,
-                            assistant_id=assistant.id,
-                            stream=True
-                        )
+            #             assistant = get_assistant_by_id(os.getenv('ASSISTANT_ID'))
+            #             create_message(st.session_state.thread.id, user_input)
+            #             stream = client.beta.threads.runs.create(
+            #                 thread_id=st.session_state.thread.id,
+            #                 assistant_id=assistant.id,
+            #                 stream=True
+            #             )
 
-                        output_container = st.empty()
-                        full_response = ""
+            #             output_container = st.empty()
+            #             full_response = ""
                         
-                        for event in stream:
-                            if hasattr(event, 'data') and hasattr(event.data, 'delta'):
-                                if hasattr(event.data.delta, 'content') and event.data.delta.content:
-                                    for content in event.data.delta.content:
-                                        if content.type == "text":
-                                            text_value = content.text.value
-                                            full_response += text_value
-                                            output_container.markdown(full_response)
+            #             for event in stream:
+            #                 if hasattr(event, 'data') and hasattr(event.data, 'delta'):
+            #                     if hasattr(event.data.delta, 'content') and event.data.delta.content:
+            #                         for content in event.data.delta.content:
+            #                             if content.type == "text":
+            #                                 text_value = content.text.value
+            #                                 full_response += text_value
+            #                                 output_container.markdown(full_response)
                             
-                            elif hasattr(event, 'status'):
-                                if event.status == 'completed':
-                                    if st.button("📋 Copy Output", key="copy_button"):
-                                        st.write("Copied to clipboard! ✨")
-                                        st.clipboard_data(full_response)
-                                    st.success("Report generated successfully!")
-                                    break
-                                elif event.status == 'failed':
-                                    st.error("❌ Execution failed. Please try again.")
-                                    return
+            #                 elif hasattr(event, 'status'):
+            #                     if event.status == 'completed':
+            #                         if st.button("📋 Copy Output", key="copy_button"):
+            #                             st.write("Copied to clipboard! ✨")
+            #                             st.clipboard_data(full_response)
+            #                         st.success("Report generated successfully!")
+            #                         break
+            #                     elif event.status == 'failed':
+            #                         st.error("❌ Execution failed. Please try again.")
+            #                         return
                 
-                except Exception as e:
-                    st.error(f"❌ An error occurred: {str(e)}")
+            #     except Exception as e:
+            #         st.error(f"❌ An error occurred: {str(e)}")
 
 if __name__ == '__main__':
     main()
