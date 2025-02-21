@@ -1,0 +1,81 @@
+# Role & Task Definition:
+You are tasked with generating the narrative text for IPI 2.3: People engaged in AICCRA-funded capacity development activities (Number) of which at least 30% are women​
+## Objective:
+Your goal is to craft a cohesive, structured, and data-driven narrative that highlights about "People engaged in AICCRA-funded capacity development activities (Number) of which at least 30% are women​."
+---
+Having into account this meausures to put in the Overall Numerical Summary:
+[Total Target] = 3121
+[Total_Achieved] = 7490
+
+
+[Percentage] = Calculate(7490/3121)
+ 
+---
+## You have two JSON data sources available:
+### IPI_2.3_Contributions.json :
+Contains data on the achievements and contributions of various clusters under People engaged in AICCRA-funded capacity development activities (Number) of which at least 30% are women​. Each entry includes:
+        Cluster (Region or Thematic Area)
+        Targeted number of partners (Target_year_by_PMC)
+        Actual number of partners achieved (End_year_achieved)
+        Achieved_narrative: A detailed explanation of how CIS and CSA access has improved, including new partnerships, policy changes, training      programs, digital tools, and innovations.
+### IPI_2.2_Additional_question.json:
+Contains responses to two questions related to IPI 2.3:
+1. Indicate how gender and social inclusion issues are expected to be dealt with
+2. Number of  ToT people expected to be attending
+3. Number of women and number of youth that are expected to attend events
+Note: Name the capacity development activities expected to be reported this year end (add indicative numbers of target beneficiaries).
+
+
+
+    
+---
+## Introduction/Overview:
+    
+Clearly state the indicator and its purpose.
+## Overall Numerical Summary:
+    
+Provide a narrative that includes the overall target, the overall achieved number, and the achievement  percentage (e.g., "By the end of 2024,    AICCRA targeted the of [Total Target]  for all cluster) partners/stakeholders and reached [Total_Achieved], achieving [Percentage]% of the target."). This information will be extracted from the IPI_2.3_Contributions.json.
+
+
+## Cluster-Level Achievements:
+Do not group clusters together. Each cluster must be presented in its own section/paragraph. Create separate sections for each of the following clusters:
+
+
+
+
+Senegal (Ensure to put the VALUE of End_year_achieved (from IPI_2.3_Contributions.json in the narrative)
+Ghana (Ensure to put the VALUE of End_year_achieved (from IPI_2.3_Contributions.json in the narrative)
+Zambia (Ensure to put the VALUE of End_year_achieved (from IPI_2.3_Contributions.json in the narrative)
+Mali (Ensure to put the VALUE of End_year_achieved (from IPI_2.3_Contributions.json in the narrative)
+Kenya (Ensure to put the VALUE of End_year_achieved (from IPI_2.3_Contributions.json in the narrative)
+Ethiopia (Ensure to put the VALUE of End_year_achieved (from IPI_2.3_Contributions.json in the narrative)
+EA (Ensure to put the VALUE of End_year_achieved (from IPI_2.3_Contributions.json in the narrative)
+WA (Ensure to put the VALUE of End_year_achieved (from IPI_2.3_Contributions.json in the narrative)
+Theme 1 (Ensure to put the VALUE of End_year_achieved (from IPI_2.3_Contributions.json in the narrative)
+Theme 2 (Ensure to put the VALUE of End_year_achieved (from IPI_2.3_Contributions.json in the narrative)
+Theme 3 (Ensure to put the VALUE of End_year_achieved (from IPI_2.3_Contributions.json in the narrative)
+Theme 4 (Ensure to put the VALUE of End_year_achieved (from IPI_2.3_Contributions.json in the narrative)
+
+
+
+For each cluster Ensure to put the VALUE of End_year_achieved in the narrative (don't summarise the thematics clusters), use the corresponding [Achieved_narrative] from PDO1_Contributions.json and put the [End_year_achieved] (Ensure put the number for each cluster, Senegal, Ghana, Zambia, Mali, Kenya, Ethiopia, EA, WA, Theme 1, Theme 2, Theme 3, Theme 4). Extract by cluster the insights from the IPI_2.3_Additional_question.json filtering by Cluster que column :
+Contains responses to two questions related to IPI 2.3:
+1. Indicate how gender and social inclusion issues are expected to be dealt with
+2. Number of  ToT people expected to be attending
+3. Number of women and number of youth that are expected to attend events
+Note: Name the capacity development activities expected to be reported this year end (add indicative numbers of target beneficiaries).
+
+
+
+--- 
+# Conclusion:
+Generate a narrative how the overall achievements and the separate, detailed cluster-level successes demonstrate AICCRA's effectiveness in expanding access to enhanced CIS and CSA technologies and in strengthening climate resilience in agriculture with based of each achieved_narrative.
+# Important:
+- Don't summarise of all, give me the all relevant details of each cluster in the IPI 2.3
+- Do not combine or group clusters into one summary. Each cluster (2) must have its own clearly delineated section.
+- The final output should be a single cohesive text in plain language, written in a formal and professional tone suitable for submission to the World Bank.
+- Don't reference to the sources in the output.
+- Ensure you put the following sections:
+    - Introduction/Overview:
+    - Overall Numerical Summary:
+    - Cluster-Level Achievements

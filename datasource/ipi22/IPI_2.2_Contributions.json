@@ -1,0 +1,23 @@
+[
+  {
+    "Indicator": "IPI 2.2",
+    "Cluster": "EA",
+    "Target_year_by_PMC": 30,
+    "End_year_achieved": 33,
+    "Achieved_narrative": "ESA approach to capacity building of regional organizations include:\n\n-Joint planning and co-creation at the beginning of the years to refine workplans through a regional planning workshop bringing together all partners, to ensure alignment activities and deliverables with indicators\n-Check-in meetings to monitor implementation of activities, and plan for joint activities e.g. those related to capacity building\n-Mid-year progress updates, and technical support including joint communication activities. \n \nSome specific examples include:\n\n-Enhanced capacities of CARDESSA and ASARECA members, and IGAD FSRP on climate, climate information, CSA and soil health: i) Regional Capacity Building Workshop on Climate and Climate Information for Agricultural Experts in ESA (D25612); ii) Regional Capacity Building Workshop on CSA, Soil fertility management, and Soil health monitoring (D25611)\n-Jointly with ICPAC and CARDESSA organized a Regional Training on Sub-seasonal Prediction for ESA focusing on utilization of latest version of Python-based Climate Predictability Tool (PyCPT v2.8) to strengthen capacity of NMHSs and ICPAC staff in sub-seasonal operational forecasting. Sub-seasonal forecasting remains a challenging area globally. The training marks a significant step in addressing a critical gap in weather and climate prediction timescale. (D25616)\n-Capacity of NMHSs in GAD region strengthened to effectively contextualize, test, validate and use WRF-Hydro. (D25607)"
+  },
+  {
+    "Indicator": "IPI 2.2",
+    "Cluster": "WA",
+    "Target_year_by_PMC": 30,
+    "End_year_achieved": 82,
+    "Achieved_narrative": "In 2024, about 82% of the total knowledge products were led by regional partners (AGRHYMET, CORAF, RUFORUM, WASCAL)."
+  },
+  {
+    "Indicator": "IPI 2.2",
+    "Cluster": "Total",
+    "Target_year_by_PMC": 60,
+    "End_year_achieved": 115,
+    "Achieved_narrative": "NA"
+  }
+]

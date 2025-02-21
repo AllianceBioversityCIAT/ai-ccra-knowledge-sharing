@@ -1,0 +1,44 @@
+[
+    {
+        "Indicator":"PDO Indicator 5",
+        "Cluster":"Senegal",
+        "Target_year_set_by_PMC":"131,343",
+        "End_year_achieved":"1,040,148",
+        "Achieved_narrative":"[OICR3695] The AICCRA project aims to disseminate vital climate information to local populations to enhance agricultural decision-making. +416K farmers directly benefited from activities with the improvement of their knowledge, practices and skills. These beneficiaries shared information with their peers estimated at 1,042,148 individuals.  To estimate the reach of those indirect beneficiaries, it was sampled 239 households within intervention areas comprising 151,675 inhabitants, then it was estimated the number that each household head shares this information which come to be an average of 7 individuals. This factor was applied to the entire population of the intervention zones being extracted from the official population census in 2024. Precision analysis suggests that the mean number of people reached per household lies between six and eight, leading to an estimated range of 908,533 to 1,215,371 indirect beneficiaries with a 95% confidence level [https:\/\/cgiar.sharepoint.com\/:w:\/r\/sites\/AICCRA\/Clusters%20Sections\/03.%20Senegal\/2024\/MidyearReporting\/Indirect_beneficiaries_NW.docx?d=we0c571be4a354b4b8902b0cea175e0f4&csf=1&web=1&e=Scfqej]. These findings underscore the critical role of social interactions in disseminating climate information and reveal that the project potentially impacts over one million individuals in targeted regions of Senegal"
+    },
+    {
+        "Indicator":"PDO Indicator 5",
+        "Cluster":"Ghana",
+        "Target_year_set_by_PMC":"300,000",
+        "End_year_achieved":"335,000",
+        "Achieved_narrative":"In addition to deploying CIS-CSA innovations, AICCRA Ghana deployed institutional innovations to reach indirect beneficiaries with AICCRA's climate innovations.  https:\/\/hdl.handle.net\/10568\/169232\n\nFirst, AICCRA CIS-CSA innovations have been integrated into Farm Radio International's (FRI) radio extension programs. FRI partner stations, for instance, broadcast the seasonal forecast and associated agro-advisories. Media personnel trained by AICCRA also share seasonal forecasts and nowcast routinely. This reached an estimated 300,000 farmers\n\nSecond, through technical collaboration with the Food Systems Resilience Programme (FSRP), AICCRA\u0092s CIS-CSA innovations were integrated into FSRP innovations. Some farmers who benefitted from the FSRP thereby accessed AICCRA innovations indirectly. This reached an estimated 5,000 farmers.\n\nThird, AICCRA\u0092s digital scaling partners- Farmerline, Syecomp, and Esoko- integrated AICCRA CIS-CSA innovations into their technical content for routine dissemination. This content was disseminated to many farmers without AICCRA funds through their call centers, helplines, and USSD platforms. This reached an estimated 30,000 farmers\n\nFourth,  AICCRA built the capacities of agriculture extension agents (AEAs) on CIS-CSA innovations. These AEAs were connected to the Ghana Ag-Innovation Data Hub where videos on AICCRA CIS-CSA innovations are available through an extension portal available for use in 2025 to reach additional indirect beneficiaries."
+    },
+    {
+        "Indicator":"PDO Indicator 5",
+        "Cluster":"Zambia",
+        "Target_year_set_by_PMC":"312,600",
+        "End_year_achieved":"245,700",
+        "Achieved_narrative":"Over 245,700 farmers (43% women) are resilient to climate shocks (D26316 and D25914)."
+    },
+    {
+        "Indicator":"PDO Indicator 5",
+        "Cluster":"Mali",
+        "Target_year_set_by_PMC":"300,000",
+        "End_year_achieved":"758,962",
+        "Achieved_narrative":"An estimated 758,962 farmers, including 470,148 women, have strengthened their resilience to climate change by using CSA and CIS disseminated by the cluster.\n\u0095\t620,666 farmers including 404,974 women using CIS through the cluster-established digital platform \n\u0095\t12,248 farmers including 9,222 women cultivating drought tolerant rice varieties promoted by the cluster  \n\u0095\t83,192 farmers including 35,978 women using location specific fertilization and cropping calendar recommendations provided by RiceAdvice \n\u0095\t34,330 farmers including 14,762 women using mechanization services and RiceAdvice recommendations promoted through the cluster established Center for Mechanized Agriculture business model \n\u0095\t500 women using the GEM parboiler to improve rice nutritional quality\n\u0095\t8,026 farmers including 4,712 women using off-season diversification options promoted by the cluster"
+    },
+    {
+        "Indicator":"PDO Indicator 5",
+        "Cluster":"Kenya",
+        "Target_year_set_by_PMC":"1,200,000",
+        "End_year_achieved":"1,500,000",
+        "Achieved_narrative":"PDO 2 shows that AICCRA Kenya has effectively engaged 600,000 direct beneficiaries. Using a multiplier of 2.5 - derived from our survey - this leads to a total of 1.5m beneficiaries with enhance resilience through AICCRA activities. As in PDO2 and PDO3, I note here that our estimate of reach and use is quite conservative, due to the overlapping of CIS and CSA use."
+    },
+    {
+        "Indicator":"PDO Indicator 5",
+        "Cluster":"Ethiopia",
+        "Target_year_set_by_PMC":"103,848",
+        "End_year_achieved":"103,031",
+        "Achieved_narrative":"From PDO2:, there are 103,031 beneficiaries in the project area increasingly accessing enhanced CIS-CSA technologies. A study by Korir et al. (2023) on Adoption of dairy technologies in smallholder dairy farms in Ethiopia. Frontiers in Sustainable Food Systems 7: 1070349 (https:\/\/hdl.handle.net\/10568\/130387) provides insights. Farmers within a social group learn from each other about the benefits and usage of new technology. It is expected that a significant number of indirect beneficiaries will emerge from the direct engagement of farmers in the AICCRA-Ethiopia project areas for PDO2. Given that 89,823 farmers accessed Climate Information Services (CIS) and digital agricultural advisories, 9,208 received site-specific fertilizer recommendations (SSFR), and 4,000 were reached through the SmaRT-Pack initiative, the knowledge transfer within social networks  and farmer cooperatives is likely to extend these innovations beyond direct participants.\n\nAssuming a conservative learning multiplier effect, where each directly engaged farmer influences at least one additional farmer in their community, the minimal estimated number of indirect beneficiaries could reach 103,031 farmers\u0097effectively doubling the reach of climate-smart innovations and digital advisories across the project area. This underscores the importance of peer-to-peer learning in accelerating technology adoption."
+    }
+]

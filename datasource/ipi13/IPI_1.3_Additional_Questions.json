@@ -1,0 +1,14 @@
+[
+  {
+    "Indicator": "IPI 1.3",
+    "Cluster": "Mali",
+    "Question": "Note: Which information is expected to be presented as soil maps, and for which areas?  (e.g. 1- Soil Organic Carbon, Ghana; 2-  Clay Content, Senegal, Mali, Ghana; 3-...)",
+    "Narrative": "NA"
+  },
+  {
+    "Indicator": "IPI 1.3",
+    "Cluster": "WA",
+    "Question": "Note: Which information is expected to be presented as soil maps, and for which areas?  (e.g. 1- Soil Organic Carbon, Ghana; 2-  Clay Content, Senegal, Mali, Ghana; 3-...)",
+    "Narrative": "Priority data types envisioned encompass chemical and physical soil properties including N, P, K, OM, SOC, pH, and bulk density, but also derived parameters such as water holding capacity, rootable depth, nutrient availability. For this activity, the concepts developed by the Soil Health Benchmarks project, the Comprehensive Assessment of Soil Health, and or the soil management assessment framework will be considered."
+  }
+]

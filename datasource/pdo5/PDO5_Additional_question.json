@@ -1,0 +1,38 @@
+[
+    {
+        "Indicator":"PDO Indicator 5",
+        "Cluster":"Mali",
+        "Question":"Note: Please indicate the factor that you expect to use to estimate the number of indirect beneficiaries (i.e. by which number have you multiplied PDO2?). Please explain the rationale behind that, citing supporting, evidence, if possible.",
+        "Narrative":"A factor of 2 was applied, indicating that for each direct beneficiary using the CSA and CIS technologies disseminated by the cluster, one additional household member was also influenced to use these technologies. This estimation was based on PDO3 rather than PDO2, as mere access to CSA and CIS does not necessarily lead to enhanced resilience in the context of Mali. Instead, resilience is expected to improve through the actual use of CSA and CIS technologies. In fact, some farmers who have access to CSA and CIS may choose not to use them, which would not contribute to enhanced resilience."
+    },
+    {
+        "Indicator":"PDO Indicator 5",
+        "Cluster":"Kenya",
+        "Question":"Note: Please indicate the factor that you expect to use to estimate the number of indirect beneficiaries (i.e. by which number have you multiplied PDO2?). Please explain the rationale behind that, citing supporting, evidence, if possible.",
+        "Narrative":"D26408 showed that recipients of AICCRA CSA technologies and services shared information with 3 other people. For recipients of AICCRA CIS technologies and services, they shared with an average of 2 people. As such, we will use a multiplier of 2.5."
+    },
+    {
+        "Indicator":"PDO Indicator 5",
+        "Cluster":"Senegal",
+        "Question":"Note: Please indicate the factor that you expect to use to estimate the number of indirect beneficiaries (i.e. by which number have you multiplied PDO2?). Please explain the rationale behind that, citing supporting, evidence, if possible.",
+        "Narrative":"Factor of 2.50. The estimates were based on the calculation method: https:\/\/cgiar.sharepoint.com\/:w:\/r\/sites\/AICCRA\/Clusters%20Sections\/03.%20Senegal\/2024\/MidyearReporting\/Indirect_beneficiaries_NW.docx?d=we0c571be4a354b4b8902b0cea175e0f4&csf=1&web=1&e=Scfqej\nand population census in 2024: https:\/\/cgiar.sharepoint.com\/:x:\/r\/sites\/AICCRA\/Clusters%20Sections\/03.%20Senegal\/2024\/MidyearReporting\/DATA%20CENSUS(1).xlsx?d=wf3795541378f4d94bf1c85ad533f41ce&csf=1&web=1&e=z3Ie7k"
+    },
+    {
+        "Indicator":"PDO Indicator 5",
+        "Cluster":"Ethiopia",
+        "Question":"Note: Please indicate the factor that you expect to use to estimate the number of indirect beneficiaries (i.e. by which number have you multiplied PDO2?). Please explain the rationale behind that, citing supporting, evidence, if possible.",
+        "Narrative":"Following consultation with the activity leaders, we multiplied the PDO2 beneficiaries of 103,031 by a factor of 1 based on the study in Ethiopia by Korir, L., Manning, L., Moore, H.L., Lindahl, J.F., Gemechu, G., Mihret, A., Berg, S., Wood, J.L.N. and Nyokabi, N.S. 2023. Adoption of dairy technologies in smallholder dairy farms in Ethiopia. Frontiers in Sustainable Food Systems 7: 1070349 (https:\/\/hdl.handle.net\/10568\/130387)"
+    },
+    {
+        "Indicator":"PDO Indicator 5",
+        "Cluster":"Ghana",
+        "Question":"Note: Please indicate the factor that you expect to use to estimate the number of indirect beneficiaries (i.e. by which number have you multiplied PDO2?). Please explain the rationale behind that, citing supporting, evidence, if possible.",
+        "Narrative":"The indirect beneficiaries were estimated through tracking of beneficiaries that are accessing AICCRA innovations without AICCRA funds. \n\nFirst, farmers who accessed AICCRA innovations indirectly through in-person activities with extension officers under the FSRP,  are estimated to be 5,000 farmers. This is based on estimates provided by the Department of Agriculture. \n\nSecond, reports from our digital scaling partners indicated that an estimated 30,000 farmers accessed this content indirectly through their digital platforms. Sycomp\u0092s USSD code with AICCRA innovations, for instance, was accessed by an estimated 9,000 farmers outside AICCRA focus regions. \n\nThird, FRI estimates that about 20% of the adult population in an area listen to radio extensions. Estimates of the 20% adult population who listen to radio extensions that broadcast AICCRA innovations outside our intervention areas is about 300,000 beneficiaries."
+    },
+    {
+        "Indicator":"PDO Indicator 5",
+        "Cluster":"Zambia",
+        "Question":"Note: Please indicate the factor that you expect to use to estimate the number of indirect beneficiaries (i.e. by which number have you multiplied PDO2?). Please explain the rationale behind that, citing supporting, evidence, if possible.",
+        "Narrative":"The project tracked the number of farmers reached beyond the project sites. For instance, in Eastern Zambia, the project partners are working with 230,000 farmers, including those in spillover areas, and 15,700 farmers integrating fisheries and livestock CIS (D26316 and D25914)."
+    }
+]

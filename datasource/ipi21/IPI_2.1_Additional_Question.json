@@ -1,0 +1,110 @@
+[
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Mali",
+    "Question": "1. Indicate how gender and social inclusion issues are dealt with",
+    "Narrative": "1.\tRIICE platform: By providing real-time data on rice area and yield, the platform supports women farmers, who often have limited access to information. Gender-sensitive training in 2025 will enhance women capacity to access and use rice monitoring data for improved productivity and climate resilience.\n\n2.\tRice yield simulation platform: The tool supports inclusive decision-making by offering localized climate adaptation strategies tailored to diverse farming systems, including those managed by women and smallholders. This ensures equitable access to yield predictions and risk mitigation strategies.\n\n3.\tAg-data hub: By integrating multiple crops and supporting startups, the hub enhances economic opportunities for women and youth-led agribusinesses. It facilitates access to climate and soil data, enabling informed decision-making and fostering resilience among vulnerable farming communities."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Theme 3",
+    "Question": "1. Indicate how gender and social inclusion issues are dealt with",
+    "Narrative": "A presentation was made to country clusters on integrating GSI into AgData Hubs (D26793), based on the guidance document Integrating GSI into Ag-Data Hubs (D26155), jointly developed with Theme 4. Further work on assessing integration into national AgData Hubs is planned for 2025 in collaboration with Theme 4."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Ghana",
+    "Question": "1. Indicate how gender and social inclusion issues are dealt with",
+    "Narrative": "Gender considerations were key in the set-up and operation of the CSA hubs;\n\nFirst, membership of all district CSA hubs working group included officers from the Women in Agriculture Development Directorate (WIAD). This ensured that agenda-setting and prioritisation of innovations included those relevant to women including setting up women specific demo plots in communities. There were intentional actions to bring more women into the CSA hub working group. Forty-two (42) out of the 218 members of the working group members across all AICCRA intervention districts were women. Four (4) out of the 13 districts hubs were chaired by women. \n\nSecond, AICCRA targeted that 40% of members in the 65 community CSA hubs should be women to ensure that these farmers who became climate champions and change agents in their communities included women. Statistics indicate that 1318 members out of 2785 total members of the community CSA hubs were women."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Kenya",
+    "Question": "1. Indicate how gender and social inclusion issues are dealt with",
+    "Narrative": "GESI has not been a primary focus in the strengthening of the KAOP. We have primarily addressed gender and social inclusion under the dissemination of advisories, but this is captured in IPI 1.1, 2.3, and PDOs 2 and 3."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Ethiopia",
+    "Question": "1. Indicate how gender and social inclusion issues are dealt with",
+    "Narrative": "Integrating gender guided by the Climate Change Gender Action Plan of Ethiopia (D26845) and specifically into the Ag-data Hub, and EDACaP for gender and social inclusion focus through:\n1-Inclusive Data-Driven Decision Making: The platform enables all farmers, including those from marginalized communities, to make informed decisions by providing access to data on weather patterns, soil quality, crop yields, and market trends.\n2-Resource Availability: By offering resources and publications, the hub ensures that information is available to a wide audience, promoting inclusivity in knowledge dissemination.\n3-Also discussions on going with other country clusters i.e. Cross-Country Learning on integrating gender into Ag-Data Hubs, planned collaboration with Theme-4 on integrating gender."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Zambia",
+    "Question": "1. Indicate how gender and social inclusion issues are dealt with",
+    "Narrative": "Mobile Application for DMMU collects real-time data, including gender-disaggregated information, enabling targeted interventions that address vulnerabilities faced by specific groups, such as women, children, and persons with disabilities, during climate hazards (D25892).\nAquaculture Advisory Tool integrates GSI considerations by linking AI-driven advisories with national weather data. Farmers, including women and youth, gain equitable access to timely aquaculture information, enabling informed decision-making (D25892)."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Senegal",
+    "Question": "1. Indicate how gender and social inclusion issues are dealt with",
+    "Narrative": "Real time feeding of data into AgData Hub was made possible with the deployment of mobile apps for NARES to monitor and review their field activities/agro-advisories. Previous studies show that men and women perceive differently the importance of context-specific climate information to be shared with them. Therefore, gender sensitive information is part of the data collection protocol to inform the AgData Hub. This refers to; primary activities including postharvest, marketing, gender-represented value chains e.g. vegetable gardening. This is to ensure gender disparities are well represented in the data used to train machine learning models with the aim of guiding interventions or setting advisories to target women and/or youth's needs and interests. When specificities to gender dimension are represented in model training data, the programs based on the resulting algorithms may reduce biases."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "WA",
+    "Question": "1. Indicate how gender and social inclusion issues are dealt with",
+    "Narrative": "The platform did not have a gender dimension."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Theme 4",
+    "Question": "1. Indicate how gender and social inclusion issues are dealt with",
+    "Narrative": "Theme 4 in 2024 analyzed how large-language models could be used to support gender sensitive communication of climate information via advisories (D26397)."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Theme 4",
+    "Question": "Note: Name the advisory platforms/hubs expected to be reported by this year end.  Explain if the platform will be enhanced/strengthened compared to previous years",
+    "Narrative": "1- Zambia agro-advisories strengthened via automated bulletin creation (tools that automate the creation of weather bulletins, streamlining workflows and reducing delays in providing critical information) and multi-channel delivery (use a dissemination portal for multi-channel dissemination, including SMS, email, and web-based platforms, ensuring weather bulletins reach diverse audiences efficiently).\n\n2- Kenya ag-data hub integrated with KAOP platform\n\n3 - Senegal ag-data hub integrated further with application for data collection and dissemination at ANACIM , and integrated with GTP platform"
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Mali",
+    "Question": "Note: Name the advisory platforms/hubs expected to be reported by this year end.  Explain if the platform will be enhanced/strengthened compared to previous years",
+    "Narrative": "1.\tRIICE platform: This is a new platform. Further information is available in D25881. \n\n2.\tRice yield simulation platform. This is a new platform. Further information is available in D25788. \n\n3.\tAg-data hub. The platform now covers multiple crops beyond groundnut, which was the only crop. Besides, it integrates soil, weather, drought indices, and production data to support startups, advisory services, and policymaking. Further information is available in D25822."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Ghana",
+    "Question": "Note: Name the advisory platforms/hubs expected to be reported by this year end.  Explain if the platform will be enhanced/strengthened compared to previous years",
+    "Narrative": "Both CSA hubs will continue to play critical role in paving the way for the Accelerator programs to take off fully in 2025. AICCRA Ghana will continue to engage government and the Ministry of Food and Agriculture (MoFA) to fully maximise the gains to digitalise the Agriculture sector and operationalise the integration of the AIDH and the GHAAP as a new government has taken over and priorities might change but with  strong engagement and coordination, we expect to sustain and build on the digitation gains in the past 4 years."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Senegal",
+    "Question": "Note: Name the advisory platforms/hubs expected to be reported by this year end.  Explain if the platform will be enhanced/strengthened compared to previous years",
+    "Narrative": "In 2024, the AgData Hub archived significant advancements that will lead to its complete validation for users. these include:\n1) Complete migration and deployment of the ANCAR app and the dashboard to ANCAR servers\n2) Seasonal forecasts for short- and medium-term climate projections integrated to provide CIS for strategic decision support and made available for decision making in extension systems \n3) Training of ANACIM and ANCAR staff on the software and the code for AgData Hub and the ANCAR app\n4) Continued trainings to GTP users on the GTP mobile app\n5) exposure of AgData Hub to the Ministry of Agriculture, Livestock, and Food Security's technical advisers, and to experts in the Livestock Community of Practice"
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Theme 3",
+    "Question": "Note: Name the advisory platforms/hubs expected to be reported by this year end.  Explain if the platform will be enhanced/strengthened compared to previous years",
+    "Narrative": "N/A"
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "WA",
+    "Question": "Note: Name the advisory platforms/hubs expected to be reported by this year end.  Explain if the platform will be enhanced/strengthened compared to previous years",
+    "Narrative": "RUFORUM Regional E-Learning Platform: this is the first it has been reported."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Kenya",
+    "Question": "Note: Name the advisory platforms/hubs expected to be reported by this year end.  Explain if the platform will be enhanced/strengthened compared to previous years",
+    "Narrative": "Since the beginning of AICCRA, we have worked closely with Kenya Agricultural Observatory Platform, a joint product between the Kenya Agriculture and Livestock Research Organization (KALRO) and the Kenya Meteorological Department (KMD). Through our 2024 activities facilitating improved collaboration between KALRO and KMD, the KAOP has been enhanced through the integration of climate data from KMD in addition to global data sets, when it previously had drawn on expensive global private sector climate data. By facilitating new data flow between KMD and KALRO, AICCRA has fostered a new era of practical public sector collaboration between the agricultural and meteorological sector organisations, strengthening public sector capacity to reliably deliver quality agclimate advisories in a timely fashion. AICCRA also integrated livestock market data from KAZNET into the KAOP dashboard, improving access for public and private sector entities to this valuable information. These enhancements are captured in D25793, D25981 and D25794."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Ethiopia",
+    "Question": "Note: Name the advisory platforms/hubs expected to be reported by this year end.  Explain if the platform will be enhanced/strengthened compared to previous years",
+    "Narrative": "The Ag DataHub Ethiopia has been strengthened through the following developments:\n1-Data Integration: The platform now consolidates data from various government agencies involved in agriculture.\n2-Advanced Features: Enhancements include improved data acquisition methods, curation processes, integration and harmonization techniques, multimodal storage capabilities, discovery and search functionalities, and robust analytics and visualization tools.\n3-Collaborative Development: Platform's development partnership with the MoA, Alliance and CIMMYT.\n4-Centralized Data Repository: Pplatform serves as a centralized repository for agricultural research data.\n5-Improved Data Management: Enhancements include better data curation, standardization, and sharing protocols, ensuring that researchers and stakeholders have access to high-quality and reliable data.\n6-User-Friendly Interface: The platform has been updated with a more intuitive and user-friendly interface, making it easier for users to navigate and retrieve information.\n\nAn enhanced new EDACaP web-based user interface with advanced analytical capabilities and functions for crop modeling was made available to Ethiopian ATI, EIAR, and MoA."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Zambia",
+    "Question": "Note: Name the advisory platforms/hubs expected to be reported by this year end.  Explain if the platform will be enhanced/strengthened compared to previous years",
+    "Narrative": "The project aims to enhance iSAT by incorporating agricultural value chain-specific knowledge products, features, and advisories into the AgData Hub, providing targeted support for various value chains."
+  }
+]

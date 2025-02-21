@@ -1,0 +1,26 @@
+[
+  {
+    "Indicator": "IPI 1.4",
+    "Cluster": "Mali",
+    "Question": "Note: Which fertilizer requirements are expected to be developed, and for which areas? ( e.g. Fertilizer requirement for  1-Cocoa, Ghana, 2- Peanuts, Senegal...)",
+    "Narrative": "Fertilizer requirement for Segou and Sikasso regions for rice in Mali"
+  },
+  {
+    "Indicator": "IPI 1.4",
+    "Cluster": "Senegal",
+    "Question": "Note: Which fertilizer requirements are expected to be developed, and for which areas? ( e.g. Fertilizer requirement for  1-Cocoa, Ghana, 2- Peanuts, Senegal...)",
+    "Narrative": "NA"
+  },
+  {
+    "Indicator": "IPI 1.4",
+    "Cluster": "WA",
+    "Question": "Note: Which fertilizer requirements are expected to be developed, and for which areas? ( e.g. Fertilizer requirement for  1-Cocoa, Ghana, 2- Peanuts, Senegal...)",
+    "Narrative": "This came out clearly as part of the in-country consultations as first top priorty crops; \n\nBurkina Faso(Cotton,Maize,Millet,Rice,Sorghum)\nLiberia(Cassava,Cocoa,Palm oil,Rice,Rubber)\nMali(Cotton,Maize,Millet,Rice,Sorghum)\nNiger(Cotton,Cowpea,Maize,Millet,Sorghum)\nSierra Leone(Cashew,Cocoa,Groundnut,Palm oil,Rice)\nTogo(Cassava,Cocoa,Cotton,Maize)\nLiberia(Cassava,Cocoa,Palm oil,Rice,Rubber)\nMali(Cotton,Maize,Millet,Rice,Sorghum)"
+  },
+  {
+    "Indicator": "IPI 1.4",
+    "Cluster": "Zambia",
+    "Question": "Note: Which fertilizer requirements are expected to be developed, and for which areas? ( e.g. Fertilizer requirement for  1-Cocoa, Ghana, 2- Peanuts, Senegal...)",
+    "Narrative": "To be determined after the soil characterization study."
+  }
+]

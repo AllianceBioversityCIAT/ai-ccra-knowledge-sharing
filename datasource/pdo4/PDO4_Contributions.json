@@ -1,0 +1,58 @@
+[
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"Senegal",
+        "Target_year_set_by_PMC":0,
+        "End_year_achieved":0,
+        "Achieved_narrative":"AICCRA -SN contributed to MITA under the leadership of WA cluster [D26766]"
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"Zambia",
+        "Target_year_set_by_PMC":2,
+        "End_year_achieved":1,
+        "Achieved_narrative":"AICCRA Zambia collaborated with agricultural training institutions to develop a Climate Risk Management in Agricultural Extension (CRMAE) Reference Guide for Zambia. This guide provides foundational knowledge on climate and agricultural decision-making, along with practical tools for analyzing climate-related risks (D25928). While the guide is not yet available in other Sub-Saharan African (SSA) countries, it has been adapted to the Agriculture to Climate Today (ACToday) project, which operates in six countries: Bangladesh, Colombia, Ethiopia, Guatemala, Senegal, and Vietnam. This adaptability makes it suitable for application in other SSA countries and will ultimately enable them to access and use validated Climate-Smart Agriculture (CSA) practices and enhanced Climate Information Services (CIS) based on lessons learned from AICCRA Zambia.\n\nThe training is designed for agricultural extension professionals who actively support farmers with information, advice, and other services. It specifically targets extension agents working at ward and sub-county levels within Zambia\u0092s public agricultural extension service, as well as non-governmental extension and advisory service professionals with a similar background. Course activities require a working knowledge of web browsers, Microsoft Word, Excel, and PowerPoint."
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"Mali",
+        "Target_year_set_by_PMC":0,
+        "End_year_achieved":1,
+        "Achieved_narrative":"The availability of accurate and seasonally updated data on rice cultivation areas, as well as forecasted and harvested yields, is essential for informed decision-making on food security, natural resource management, agricultural productivity, and insurance. These priorities are now central to the ECOWAS Rice Observatory.\n\nIn response to this need and the Malian government's demand, the Mali cluster developed the RIICE tool to monitor rice area, yield, and climate change impacts. During a MITA workshop organized by the West Africa cluster, government officials from C\u00f4te d\u0092Ivoire were introduced to the RIICE tool and showed strong interest. Consequently, in 2024, the tool was adapted for C\u00f4te d\u0092Ivoire through collaboration with the One CGIAR Regional Integrated Initiative for West and Central Africa, under the oversight of the West Africa cluster.\n\nKey activities included generating a rice baseline and ecosystem map, estimating rice area and yield for the wet season, conducting field experiments, and validating yield estimations. Sentinel-1, Sentinel-2, and PlanetScope satellite data, combined with the ORYZA crop growth model, provided high-accuracy (89.5%) rice area mapping and promising yield estimations (4.7 t\/ha on average). Moving forward, efforts will focus on institutionalizing RIICE in C\u00f4te d\u0092Ivoire, leveraging lessons and experiences from Mali."
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"Kenya",
+        "Target_year_set_by_PMC":2,
+        "End_year_achieved":2,
+        "Achieved_narrative":"To be reported the by ESA Cluster as agreed at the beginning of 2024."
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"EA",
+        "Target_year_set_by_PMC":4,
+        "End_year_achieved":14,
+        "Achieved_narrative":"1- The Weather Research and Forecasting Hydrological (WRF-HYDRO)-based flash flood forecasting model\/tool\/system configured, tested and used in Ethiopia made accessible to facilitate spillover in three Greater Horn of Africa (GHoA) countries: South Sudan, Somalia, and Sudan. (D25607)\n\n2- The Sub-seasonal forecasting using the Python-based climate predictability tool (PYCPTR V2.8) which bridges the forecasting gap between short-term weather and seasonal prediction in the ESA region was made accessible for; i) Five Eastern countries: Somalia, Sudan, Uganda, Djibouti, South Sudan; and ii) Eight Southern Africa countries: Zimbabwe, Botswana, Malawi, Mozambique, Lesotho, Madagascar, South Africa and Namibia. (D25616)\n\n3- The Climate-Agriculture Modeling Decision Tool (CAMDT) developed for Zimbabwe made accessible for spillover to Malawi upon a request by Malawi Ministry of Agriculture (Department of Land Resource Conservation) through hands-on-capacity building training conducted by CCARDESA and AICCRA. The training workshop was held in Lilongwe, in December 2024 and attended by over 20 professionals from Lilongwe University of Agricultural Research (LUANAR), Ministry of Agriculture Department of Land Resources Conservation, the Department of Climate Change and Meteorological Services (DCCMS) and relevant departments. (D25603)\n\n4- Nutrient Dense resilient pearl millet varieties developed in Kenya and validated through AICCRA and related projects being promoted in Zimbabwe and Madagascar"
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"WA",
+        "Target_year_set_by_PMC":4,
+        "End_year_achieved":22,
+        "Achieved_narrative":"Through AICCRA engagement and capacity development, the cluster has reached 22 unique non-AICCRA countries in West (11), Central (03), North (01), East and Southern (07) Africa. The non-AICCRA countries were reached with:\ni) a full range of new seasonal and sub-seasonal forecasting methodologies accessible through the in-house WAS_S2S tool (developed by AGRHYMET as part of AICCRA), enabling to generate timely and decision-relevant climate information for agricultural sector\nii) tools and methods implementing and managing a Climate-Smart Village (CSV) for scaling CSA technologies\niii) Gender-Smart Accelerator program, in collaboration with Theme 2\niv) Six CSA technologies and innovations in rice value chain [RiceAdvice, Smart-Valleys, Alternate wetting and drying, Integrated rice-fish production, Solar-powered irrigation system (with a Pay as you go model), Climate-resilient rice varieties (drought, cold and submergence tolerant)] in collaboration with Mali cluster\nv) All the 09 CSA and CIS course modules developed, in collaboration with ESA and Theme 4 clusters.\n\nSome of these spillover countries were part of the FRSP program, and thus benefited from AICCRA support. Indeed, AICCRA engagement intentionally targeted FSRP countries a way to harness synergies between the two World Bank-funded programs.\nAchievements in East and Southern Africa are shared with ESA and Theme 4 cluster."
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"Theme 1",
+        "Target_year_set_by_PMC":2,
+        "End_year_achieved":4,
+        "Achieved_narrative":"Working with CIFOR-ICRAF, we implemented trainings in Malawi and Tanzania with farmers and extension officers. The outcome is documented in an OICR. In total we trained 100 people, many of whom will go on to train additional people in their communities. The CIFOR-ICRAF teams in the countries chose the CSA technologies (use of Gliricidia sepium for livestock feeding and integration of forages in existing farm systems from a list of innovations already in use in AICCRA countries. We then used training material from Ethiopia and Zambia to create tailored training materials."
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"Theme 3",
+        "Target_year_set_by_PMC":0,
+        "End_year_achieved":1,
+        "Achieved_narrative":"The Gender and Climate Hotspot mapping project was finalized in Uganda and Botswana.  A policy brief co-authored by the Government of Uganda was published in 2024, highlighting the main findings of the mapping project in Uganda (D26481)."
+    }
+]

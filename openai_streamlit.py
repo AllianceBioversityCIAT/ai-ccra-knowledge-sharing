@@ -2,6 +2,7 @@ import streamlit as st
 import time
 import os
 import pyperclip
+import glob
 from openai import OpenAI
 from dotenv import load_dotenv
 from streamlit_modal import Modal
@@ -75,6 +76,47 @@ def update_assistant_metadata(assistant_id, instruction, temperature=1):
         temperature=temperature,
     )
 
+def vector_store(vector_store_id, file_path):
+    """Upload a file to the vector store."""
+    # Open and upload the file
+    with open(file_path, 'rb') as file:
+        uploadFile = client.files.create(
+            file=file,
+            purpose="assistants"
+        )
+
+    return client.beta.vector_stores.files.create(
+        vector_store_id=vector_store_id,
+        file_id=uploadFile.id,
+    )
+
+def load_indicator_documents(folder_path):
+    """Load all documents from the indicator's folder."""
+    supported_extensions = ['.json', '.txt', '.pdf']
+    files = []
+    for ext in supported_extensions:
+        files.extend(glob.glob(os.path.join(folder_path, f"*{ext}")))
+    return files
+
+def clear_and_load_indicator_documents(vector_store_id, folder_path):
+    """Clear existing documents and load new ones for the selected indicator."""
+    print(f"🔄 Loading documents for {folder_path}")
+    # Clear existing documents
+    vector_store_files = list_vector_store(vector_store_id)
+    if vector_store_files.data:
+        for file in vector_store_files.data:
+            delete_vector_store_file(vector_store_id, file.id)
+    
+    # Load new documents
+    documents = load_indicator_documents(folder_path)
+    print(f"📁 {len(documents)} documents loaded")
+    for doc_path in documents:
+        print(f"📁 {doc_path}")
+        try:
+            vector_store(vector_store_id, doc_path)
+        except Exception as e:
+            st.error(f"Error uploading {os.path.basename(doc_path)}: {str(e)}")
+
 # ---------------------------
 # FUNCIONES PARA MANEJAR LOS ARCHIVOS DE PROMPT
 # ---------------------------
@@ -111,28 +153,34 @@ def list_prompt_files():
     prompts_dir = get_prompts_dir()
     files = [f for f in os.listdir(prompts_dir) if f.endswith(".txt")]
     prompt_keys = [os.path.splitext(f)[0] for f in files]
-    return prompt_keys
+    
+    ordered_keys = []
+    for indicator in INDICATORS:
+        if indicator["key"] in prompt_keys:
+            ordered_keys.append(indicator["key"])
+    
+    return ordered_keys
 
 # ---------------------------
 # LISTA DE INDICADORES (global para usar en la edición y creación de prompts)
 # ---------------------------
 INDICATORS = [
-    {"key": "pdo_indicator_1", "value": "PDO Indicator 1"},
-    {"key": "pdo_indicator_2", "value": "PDO Indicator 2"},
-    {"key": "pdo_indicator_3", "value": "PDO Indicator 3"},
-    {"key": "pdo_indicator_4", "value": "PDO Indicator 4"},
-    {"key": "pdo_indicator_5", "value": "PDO Indicator 5"},
-    {"key": "ipi_1_1", "value": "IPI 1.1"},
-    {"key": "ipi_1_2", "value": "IPI 1.2"},
-    {"key": "ipi_1_3", "value": "IPI 1.3"},
-    {"key": "ipi_1_4", "value": "IPI 1.4"},
-    {"key": "ipi_2_1", "value": "IPI 2.1"},
-    {"key": "ipi_2_2", "value": "IPI 2.2"},
-    {"key": "ipi_2_3", "value": "IPI 2.3"},
-    {"key": "ipi_3_1", "value": "IPI 3.1"},
-    {"key": "ipi_3_2", "value": "IPI 3.2"},
-    {"key": "ipi_3_3", "value": "IPI 3.3"},
-    {"key": "ipi_3_4", "value": "IPI 3.4"},
+    {"key": "pdo_indicator_1", "value": "PDO 1", "folder_path": "datasource/pdo1"},
+    {"key": "pdo_indicator_2", "value": "PDO 2", "folder_path": "datasource/pdo2"},
+    {"key": "pdo_indicator_3", "value": "PDO 3", "folder_path": "datasource/pdo3"},
+    {"key": "pdo_indicator_4", "value": "PDO 4", "folder_path": "datasource/pdo4"},
+    {"key": "pdo_indicator_5", "value": "PDO 5", "folder_path": "datasource/pdo5"},
+    {"key": "ipi_1_1", "value": "IPI 1.1", "folder_path": "datasource/ipi11"},
+    {"key": "ipi_1_2", "value": "IPI 1.2", "folder_path": "datasource/ipi12"},
+    {"key": "ipi_1_3", "value": "IPI 1.3", "folder_path": "datasource/ipi13"},
+    {"key": "ipi_1_4", "value": "IPI 1.4", "folder_path": "datasource/ipi14"},
+    {"key": "ipi_2_1", "value": "IPI 2.1", "folder_path": "datasource/ipi21"},
+    {"key": "ipi_2_2", "value": "IPI 2.2", "folder_path": "datasource/ipi22"},
+    {"key": "ipi_2_3", "value": "IPI 2.3", "folder_path": "datasource/ipi23"},
+    {"key": "ipi_3_1", "value": "IPI 3.1", "folder_path": "datasource/ipi31"},
+    {"key": "ipi_3_2", "value": "IPI 3.2", "folder_path": "datasource/ipi32"},
+    {"key": "ipi_3_3", "value": "IPI 3.3", "folder_path": "datasource/ipi33"},
+    {"key": "ipi_3_4", "value": "IPI 3.4", "folder_path": "datasource/ipi34"},
 ]
 
 # ---------------------------
@@ -328,58 +376,120 @@ def main():
         selected_indicator = st.selectbox(
             "Select Indicator",
             ["Select an indicator..."] + available_indicators,
-            index=0
+            index=0,
+            key="indicator_selector"  # Add a key for session state tracking
         )
 
-        selected_key = next(
-            (ind["key"] for ind in INDICATORS if ind["value"] == selected_indicator),
+        selected_info = next(
+            (ind for ind in INDICATORS if ind["value"] == selected_indicator),
             None
         )
 
-        if 'thread' not in st.session_state:
-            st.session_state.thread = create_thread()
-        
-        # Si se ha seleccionado un indicador, se lee el contenido del prompt desde el archivo correspondiente
-        user_input = read_prompt_file(selected_key) if selected_key else "Generate the narrative of Indicators for the Annual Report 2024."
-        prompt = user_input
-
-        if st.button("🚀 Generate Report", disabled=(selected_indicator == "Select an indicator...")):
+        # Only load documents when indicator changes
+        if selected_info and (
+            "current_indicator" not in st.session_state or 
+            st.session_state.current_indicator != selected_indicator
+        ):
             try:
-                with st.spinner("🔄 Processing..."):
+                with st.spinner("🔄 Loading indicator documents..."):
                     assistant = get_assistant_by_id(os.getenv('ASSISTANT_ID'))
-                    create_message(st.session_state.thread.id, user_input)
+                    vector_store_id = assistant.tool_resources.file_search.vector_store_ids[0]
                     
-                    stream = client.beta.threads.runs.create(
-                        thread_id=st.session_state.thread.id,
-                        assistant_id=assistant.id,
-                        stream=True
-                    )
-                    
-                    output_container = st.empty()
-                    full_response = ""
-                    
-                    for event in stream:
-                        if hasattr(event, 'data') and hasattr(event.data, 'delta'):
-                            if hasattr(event.data.delta, 'content') and event.data.delta.content:
-                                for content in event.data.delta.content:
-                                    if content.type == "text":
-                                        text_value = content.text.value
-                                        full_response += text_value
-                                        output_container.markdown(full_response)
-                        
-                        elif hasattr(event, 'status'):
-                            if event.status == 'completed':
-                                if st.button("📋 Copy Output", key="copy_button"):
-                                    st.write("Copied to clipboard! ✨")
-                                    st.clipboard_data(full_response)
-                                st.success("Report generated successfully!")
-                                break
-                            elif event.status == 'failed':
-                                st.error("❌ Execution failed. Please try again.")
-                                return
-                        
+                    clear_and_load_indicator_documents(vector_store_id, selected_info["folder_path"])
+                    st.session_state.current_indicator = selected_indicator
+                    st.success("📚 Indicator documents loaded successfully!")
             except Exception as e:
-                st.error(f"❌ An error occurred: {str(e)}")
+                st.error(f"❌ Error loading documents: {str(e)}")
+
+        if selected_info:
+            selected_key = selected_info["key"]
+            user_input = read_prompt_file(selected_key)
+            prompt = user_input
+
+            if st.button("🚀 Generate Report"):
+                try:
+                    with st.spinner("🔄 Processing..."):
+                        if 'thread' not in st.session_state:
+                            st.session_state.thread = create_thread()
+                            
+                        assistant = get_assistant_by_id(os.getenv('ASSISTANT_ID'))
+                        create_message(st.session_state.thread.id, user_input)
+                        
+                        stream = client.beta.threads.runs.create(
+                            thread_id=st.session_state.thread.id,
+                            assistant_id=assistant.id,
+                            stream=True
+                        )
+                        
+                        output_container = st.empty()
+                        full_response = ""
+                        
+                        for event in stream:
+                            if hasattr(event, 'data') and hasattr(event.data, 'delta'):
+                                if hasattr(event.data.delta, 'content') and event.data.delta.content:
+                                    for content in event.data.delta.content:
+                                        if content.type == "text":
+                                            text_value = content.text.value
+                                            full_response += text_value
+                                            output_container.markdown(full_response)
+                            
+                            elif hasattr(event, 'status'):
+                                if event.status == 'completed':
+                                    if st.button("📋 Copy Output", key="copy_button"):
+                                        st.write("Copied to clipboard! ✨")
+                                        st.clipboard_data(full_response)
+                                    st.success("Report generated successfully!")
+                                    break
+                                elif event.status == 'failed':
+                                    st.error("❌ Execution failed. Please try again.")
+                                    return
+                            
+                except Exception as e:
+                    st.error(f"❌ An error occurred: {str(e)}")
+            
+            indicator = selected_info["value"]
+            disemination_prompt = read_prompt_file("disemination")
+            user_input = f"From {indicator} extract: {disemination_prompt}"
+
+            if st.button('🔗 Generate evidence of Deliverables 🚧'):
+                try:
+                    with st.spinner("🔄 Processing..."):
+                        if 'thread' not in st.session_state:
+                            st.session_state.thread = create_thread()
+                    
+                        assistant = get_assistant_by_id(os.getenv('ASSISTANT_ID'))
+                        create_message(st.session_state.thread.id, user_input)
+                        stream = client.beta.threads.runs.create(
+                            thread_id=st.session_state.thread.id,
+                            assistant_id=assistant.id,
+                            stream=True
+                        )
+
+                        output_container = st.empty()
+                        full_response = ""
+                        
+                        for event in stream:
+                            if hasattr(event, 'data') and hasattr(event.data, 'delta'):
+                                if hasattr(event.data.delta, 'content') and event.data.delta.content:
+                                    for content in event.data.delta.content:
+                                        if content.type == "text":
+                                            text_value = content.text.value
+                                            full_response += text_value
+                                            output_container.markdown(full_response)
+                            
+                            elif hasattr(event, 'status'):
+                                if event.status == 'completed':
+                                    if st.button("📋 Copy Output", key="copy_button"):
+                                        st.write("Copied to clipboard! ✨")
+                                        st.clipboard_data(full_response)
+                                    st.success("Report generated successfully!")
+                                    break
+                                elif event.status == 'failed':
+                                    st.error("❌ Execution failed. Please try again.")
+                                    return
+                
+                except Exception as e:
+                    st.error(f"❌ An error occurred: {str(e)}")
 
 if __name__ == '__main__':
     main()

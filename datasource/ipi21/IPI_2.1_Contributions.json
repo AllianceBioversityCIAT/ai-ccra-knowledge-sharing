@@ -1,0 +1,72 @@
+[
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Senegal",
+    "Target_year_by_PMC": 1,
+    "End_year_achieved": 1,
+    "Achieved_narrative": "[OICR3565] In 2024, AgData Hubs achieved key milestones including migration of the platform to ANACIM�s server and integration with GTP portal. The Hub has been institutionalized and embedded within the GTP framework (Multidisciplinary Working Group) of ANACIM and complemented the GTPs functioning and role in generation and provisioning of context specific CIS. Through the Hubs, GTPs can avail Agromet Decision Support as well as automation of the climate services. In 2024, it provided seasonal forecasts for short- and medium-term climate projections to generate CIS for strategic decision support. Further, the Hub through APIs enabled climate and weather data access to ANCAR�s agro-advisories system and paved the way for a frictionless collaboration between ANACIM and ANCAR.\n\nFurther, the platform was adapted and enhanced to respond to user-demand through 1) trainings with GTP members including technicians from ANACIM and managers of Rural Development services (ANCAR and others) on the functionalities for better decision-making in the agro-sylvo-pastoral development sectors in Senegal [D25948]; 2)  AgData Hub was introduced to the Ministry of Agriculture, Livestock, and Food Security's technical advisers [D26498], and to experts in the Livestock Community of Practice [D26486]. \nThe platform hosted on ANACIM servers can be accessed here: (http://3.138.167.184/gtp/)."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Ghana",
+    "Target_year_by_PMC": 2,
+    "End_year_achieved": 2,
+    "Achieved_narrative": "In 2024, AICCRA Ghana strengthened  Ag-Innovatiopn Data Hub (AIDH) and created new District and community CSA Hubs,; \n\n1)Ag-Innovatiopn Data Hub (AIDH) Key developments included:\na)A joint plan by the Ministry of Food and Agriculture (MoFA) and AICCRA to integrate the AIDH and the Ghana Agriculture and Agri-Business Platform (GHAAP) including developing Farm Polygon Mapping Tool to address challenges faced by GHAAP in registering and mapping farmers nationwide.\nb)High-End Server Installed at CSIR-INSTI-managed labs to ensure the AIDH�s sustainability beyond AICCRA�s project lifecycle.\nc)Developed an Early Warning and Rapid Response Digital Tool for Pest and Diseases Reporting. https://hdl.handle.net/10568/169293\n\n2) Creation of CSA Hubs; \na) District CSA Hubs (13 in total) were created to connect key actors including researchers, extension officers, ag-innovators, agro SMEs, radio extension actors, and climate information service providers.\nb) Community CSA Hubs (65 in total) as Farmer Learning Platforms were created to promote bundled solutions including smart production and soils, CS-IPM, smart seeds and markets, and water-smart solutions.  https://hdl.handle.net/10568/169294\n\nSelecting and training CSA Hub members became pivotal in downscaling Climate-Smart Agriculture (CSA) technologies at the community level. These efforts enhanced smallholder farmers� resilience through adopting CSA practices, improving crop resilience, and scaling sustainable agricultural systems across Ghana."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Zambia",
+    "Target_year_by_PMC": 1,
+    "End_year_achieved": 2,
+    "Achieved_narrative": "Significant progress has been made in integrating the data from AgDataHubs through APIs with multi-channel dissemination of climate and weather-informed agro-advisories, including data collected by enumerators of DMMU through the DMMU Mobile Application developed by the project (D25892).\nA prototype for hosting the aquaculture advisory tool on iSAT on the Agdata hub has been developed (D25909). The prototype has demonstrated that the platform can send messages and is stable when linked to weather data and information sources to generate advisories for aquaculture farmers. The prototype is linked to the AI model developed for the air and pond water temperature algorithms."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Mali",
+    "Target_year_by_PMC": 3,
+    "End_year_achieved": 3,
+    "Achieved_narrative": "In 2024, three climate advisory platforms were launched or strengthened to enhance agricultural decision-making and climate adaptation.\n\n1.\tRIICE Platform: Validated for irrigated, rainfed lowlands, and uplands in Mali, RIICE monitors rice area, yield, and climate change impacts. Training sessions in 2025 will support its institutionalization (D25881). Potential users of the RIICE Platform include the Ministry of Agriculture, IER, Ministry of Environment and policymakers. \n\n2.\tRice Yield Simulation Platform: Developed using data from 17,647 fields across 12 West African countries, this digital tool integrates climate, soil, and agronomic data, achieving over 75% accuracy in yield prediction. It provides insights for climate adaptation and sustainable rice production (D25788). Potential users of the rice yield simulation platform include the Ministry of Agriculture, IER, Ministry of Environment and policymakers.\n\n3.\tAg-Data Hub: An enhanced Mali Ag-Data Hub, launched in November 2024, now covers multiple crops beyond groundnut. It integrates soil, weather, drought indices, and production data to support startups, advisory services, and policymaking (D25787). Potential users of the Ag-Data Hub include the national meteorological agency, the Ministry of Agriculture, Ministry of Environment, policymakers."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Kenya",
+    "Target_year_by_PMC": 1,
+    "End_year_achieved": 1,
+    "Achieved_narrative": "Since the beginning of AICCRA, we have been working very closely with the Kenya Agricultural Observatory Platform, which is a joint product between the Kenya Agriculture and Livestock Research Organization (KALRO) and the Kenya Meteorological Department (KMD). Through our 2024 activities facilitating improved collaboration between KALRO and KMD, the KAOP has been enhanced through the integration of climate data from KMD in addition to global data sets from Climate Hazards Group InfraRed Precipitation with Station (CHIRPS) and Tropical Applications of Meteorology using Satellite (TAMSAT). By facilitating new data flow between KMD and KALRO, AICCRA has fostered a new era of practical public sector collaboration between the agricultural and meteorological sector organisations. AICCRA also integrated livestock market data from KAZNET into the KAOP dashboard, improving access for public and private sector entities to this valuable information. These enhancements are captured in D25793, D25981 and D25794."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Ethiopia",
+    "Target_year_by_PMC": 1,
+    "End_year_achieved": 2,
+    "Achieved_narrative": "Working with the partners (Alliance, CIMMYT, ILRI, IRI, ICARDA, MoA, EIAR and others) to strengthen and support the operationalization of Ethiopia's Integrated National Ag-Data Hub (D25689) that is centralized platform integrating data from various government agencies involved in agriculture at both federal and regional levels. By consolidating disparate data systems, it provides a comprehensive view of the agricultural sector, facilitating data-driven decisions that boost farmer productivity and sustainability. The Integrated National Ag-datahub (D26393)  was further developed to improve admin dashboard, integrate datahub user guide, integrate data taxonomy tree, improve landing page and integrated with different mini-hubs including the Natural resources and aLive data lakes at MoA. Further it was linked to with Ethioseed system (D26426), the CSA knowledge hub (D254644) and ELaRP platforms (https://csa-knowledgehub.org.et/; https://csa-knowledgehub.org.et/elarp). The user-feedback system was developed and integrated with the Ag-data Hub (D25689). \n\nA new EDACaP web-based user interface with advanced analytical capabilities and functions for crop modeling (D25703, https://datahub.moa.gov.et/;   https://datahub.eiar.gov.et/) was be made available to Ethiopian ATI, EIAR, and MoA, and EDACaP was linked for the first time with ATI's 6028 national phone hotline via API for dissemination of advisories to beneficiaries and end users."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "WA",
+    "Target_year_by_PMC": 1,
+    "End_year_achieved": 1,
+    "Achieved_narrative": "The cluster has contributing to the enhancement of RUFORUM Regional E-Learning Platform. Thanks to AICCRA support, RUFORUM has training the CIS/CSA course module developers on how to translate the course modules into E-Learning format or materials. Following the training workshop, the e-learning materials have been developed and uploaded on RUFORUM E-Learning Platform, thus enhancing the content and course modules available on the platform. In addition, uploading AICCRA CIS/CSA course modules on the platform will contribute to make accessible CIS and CSA knowledge to a large number of students across Africa."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Theme 4",
+    "Target_year_by_PMC": 0,
+    "End_year_achieved": 3,
+    "Achieved_narrative": "Theme 4, working in a complementary manner with country clusters, contributed to the strengthening of climate advisory platforms through supporting integration of ag-data hubs with advisory platforms in Senegal (via the GTP platform), Kenya (via KAOP), and Zambia (via ZIAMIS). Specifically, it has played a technical role as well as knowledge sharing role to facilitate cross-country exchanges on progress, learnings, good practices, and technical advancements to ensure coherency across implementing countries, which is summarized in D26396 (Strategic Blue Print for AICCRA Ag-Data Hubs). \n\nIt also contributed to the RUFORUM Regional e-Learning platform via its Climate Basics and Climate-Smart Agriculture courses (D26847)."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Theme 3",
+    "Target_year_by_PMC": 0,
+    "End_year_achieved": 0,
+    "Achieved_narrative": "A presentation was made to country clusters on integrating GSI into AgData Hubs (D26793), based on the guidance document Integrating GSI into Ag-Data Hubs (D26155), jointly developed with Theme 4. Further work on assessing integration into national AgData Hubs is planned for 2025 in collaboration with Theme 4.  \nTheme 3 collaborated with Senegal on D25953, Implementation framework to conceptualize and develop national scale AgDataHubs to operationalize CIS within agriculture."
+  },
+  {
+    "Indicator": "IPI 2.1",
+    "Cluster": "Total",
+    "Target_year_by_PMC": 10,
+    "End_year_achieved": 15,
+    "Achieved_narrative": "NA"
+  }
+]

@@ -1,0 +1,98 @@
+[
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"Theme 3",
+        "Question":"1. Name the likely country to be reported in future years, if known",
+        "Narrative":"Botswana. The report of the hotspot mapping in Botswana was finalized and sent to the Ministry of Environment where it is currently under review."
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"WA",
+        "Question":"1. Name the likely country to be reported in future years, if known",
+        "Narrative":"FSRP countries: Burkina Faso, Niger, Sierra Leone, Tchad, Togo"
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"Theme 1",
+        "Question":"1. Name the likely country to be reported in future years, if known",
+        "Narrative":"In future we will not be directly contributing to this PDO."
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"EA",
+        "Question":"1. Name the likely country to be reported in future years, if known",
+        "Narrative":"Most likely other countries in Southern Africa countries for the Climate-Agriculture Modeling Decision Tool (CAMDT)."
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"Senegal",
+        "Question":"1. Name the likely country to be reported in future years, if known",
+        "Narrative":null
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"Mali",
+        "Question":"1. Name the likely country to be reported in future years, if known",
+        "Narrative":"Nigeria"
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"Zambia",
+        "Question":"1. Name the likely country to be reported in future years, if known",
+        "Narrative":"This will be determined by the available budget."
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"Kenya",
+        "Question":"1. Name the likely country to be reported in future years, if known",
+        "Narrative":"To be reported the by ESA Cluster"
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"WA",
+        "Question":"Note:  Number and name of country expected to be reported this year. For each country, provide the climate information services and\/ or validated climate-smart agriculture technologies that are expected to be accessible (if this last information is not provided the country will not be counted against the target). This combination, or 'pairing' needs to be reported. 'Pairing' refers to unique instances where AICCRA technology\/information\/service originating from one AICCRA core country is observed to occur in another country, thereby creating a 'pair' between country and technology\/information\/service. (e.g. 1. Benin - i. improved NextGen approach for seasonal and sub-seasonal climate forecasting; ii. communicating uncertainties in seasonal climate forecast; iii. CIS and CSA curricula.)",
+        "Narrative":"- Tanzania: 04 course modules (Climate Information Systems in Agriculture; Climate-Smart Agriculture Basics, Soil Carbon Sequestration in Crop Management, Agroforestry)\n\n- Liberia, Nigeria, Cameroon, DR Congo, Malawi, Mozambique, South Africa, Sudan, Uganda, Zimbabwe: all the 09 course modules\n\n- Burkina Faso, Niger, Sierra Leone, Togo: Six CSA technologies for rice value chain [RiceAdvice, Smart-Valleys, Alternate wetting and drying, Integrated rice-fish production, Solar-powered irrigation system (with a Pay as you go model), Climate-resilient rice varieties (drought, cold and submergence tolerant)]\n\n- Burkina Faso, Tchad, Niger, Togo, Sierra Leone: Gender-Smart Accelerator program\n\n- Tchad, Burkina Faso, Niger, Sierra Leone, Togo: tools and methods implementing and managing a Climate-Smart Village (CSV) for scaling CSA technologies\n\n- Benin, Burkina-Faso, Cap-Vert, C\u00f4te-d\u0092Ivoire, Gambie, Guinee-Bissau, Liberia, Mauritania, Niger, Nigeria, Tchad: a full range of new seasonal and sub-seasonal forecasting methodologies accessible through the in-house WAS_S2S tool (developed by AGRHYMET)"
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"EA",
+        "Question":"Note:  Number and name of country expected to be reported this year. For each country, provide the climate information services and\/ or validated climate-smart agriculture technologies that are expected to be accessible (if this last information is not provided the country will not be counted against the target). This combination, or 'pairing' needs to be reported. 'Pairing' refers to unique instances where AICCRA technology\/information\/service originating from one AICCRA core country is observed to occur in another country, thereby creating a 'pair' between country and technology\/information\/service. (e.g. 1. Benin - i. improved NextGen approach for seasonal and sub-seasonal climate forecasting; ii. communicating uncertainties in seasonal climate forecast; iii. CIS and CSA curricula.)",
+        "Narrative":"1. Three countries (South Sudan, Somalia, and Sudan): Weather Research and Forecasting Hydrological (WRF-HYDRO)-based flash flood forecasting model\/tool\/system\n\n2. Malawi: Climate-Agriculture Modeling Decision Tool (CAMDT)\n\n3. Thirteen countries (Somalia, Sudan, Uganda, Djibouti, South Sudan, Zimbabwe, Botswana, Malawi, Mozambique, Lesotho, Madagascar, South Africa and Namibia): Sub-seasonal forecasting using the Python-based climate predictability tool (PYCPTR V2.8) \n4. Two countries (Zimbabwe and Madagascar): Nutrient Dense resilient pearl millet varieties developed in Kenya and validated through AICCRA and related projects"
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"Mali",
+        "Question":"Note:  Number and name of country expected to be reported this year. For each country, provide the climate information services and\/ or validated climate-smart agriculture technologies that are expected to be accessible (if this last information is not provided the country will not be counted against the target). This combination, or 'pairing' needs to be reported. 'Pairing' refers to unique instances where AICCRA technology\/information\/service originating from one AICCRA core country is observed to occur in another country, thereby creating a 'pair' between country and technology\/information\/service. (e.g. 1. Benin - i. improved NextGen approach for seasonal and sub-seasonal climate forecasting; ii. communicating uncertainties in seasonal climate forecast; iii. CIS and CSA curricula.)",
+        "Narrative":"Cote d'Ivoire \nAccurate, seasonally updated data on rice cultivation areas, yields, and climate impacts is critical for decision-making in food security, resource management, agricultural productivity, and insurance. This is a key focus of the ECOWAS Rice Observatory. In response to this and demand from Malian government, the Mali cluster developed the RIICE tool to monitor rice areas and yields, and assess climate change effects. At a MITA workshop, government officials from C\u00f4te d'Ivoire showed strong interest in RIICE, leading to its adaptation for C\u00f4te d'Ivoire in 2024. Key activities involved creating a rice baseline and ecosystem map, estimating rice areas and yields for the wet season, and validating yield predictions through field experiments. Using satellite data and the ORYZA crop growth model, the project achieved 89.5% accuracy in rice area mapping and estimated an average yield of 4.7 t\/ha."
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"Theme 1",
+        "Question":"Note:  Number and name of country expected to be reported this year. For each country, provide the climate information services and\/ or validated climate-smart agriculture technologies that are expected to be accessible (if this last information is not provided the country will not be counted against the target). This combination, or 'pairing' needs to be reported. 'Pairing' refers to unique instances where AICCRA technology\/information\/service originating from one AICCRA core country is observed to occur in another country, thereby creating a 'pair' between country and technology\/information\/service. (e.g. 1. Benin - i. improved NextGen approach for seasonal and sub-seasonal climate forecasting; ii. communicating uncertainties in seasonal climate forecast; iii. CIS and CSA curricula.)",
+        "Narrative":"In 2024:\nMalawi - Gliricidia sepium as a livestock feed, green manure and for pest management\nTanzania - Gliricidia sepium as a livestock feed, green manure and for pest management\nMalawi - integration of forages in existing farm systems\nTanzania - integration of forages in existing farm systems"
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"Senegal",
+        "Question":"Note:  Number and name of country expected to be reported this year. For each country, provide the climate information services and\/ or validated climate-smart agriculture technologies that are expected to be accessible (if this last information is not provided the country will not be counted against the target). This combination, or 'pairing' needs to be reported. 'Pairing' refers to unique instances where AICCRA technology\/information\/service originating from one AICCRA core country is observed to occur in another country, thereby creating a 'pair' between country and technology\/information\/service. (e.g. 1. Benin - i. improved NextGen approach for seasonal and sub-seasonal climate forecasting; ii. communicating uncertainties in seasonal climate forecast; iii. CIS and CSA curricula.)",
+        "Narrative":null
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"Zambia",
+        "Question":"Note:  Number and name of country expected to be reported this year. For each country, provide the climate information services and\/ or validated climate-smart agriculture technologies that are expected to be accessible (if this last information is not provided the country will not be counted against the target). This combination, or 'pairing' needs to be reported. 'Pairing' refers to unique instances where AICCRA technology\/information\/service originating from one AICCRA core country is observed to occur in another country, thereby creating a 'pair' between country and technology\/information\/service. (e.g. 1. Benin - i. improved NextGen approach for seasonal and sub-seasonal climate forecasting; ii. communicating uncertainties in seasonal climate forecast; iii. CIS and CSA curricula.)",
+        "Narrative":"This will be determined by the available budget."
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"Kenya",
+        "Question":"Note:  Number and name of country expected to be reported this year. For each country, provide the climate information services and\/ or validated climate-smart agriculture technologies that are expected to be accessible (if this last information is not provided the country will not be counted against the target). This combination, or 'pairing' needs to be reported. 'Pairing' refers to unique instances where AICCRA technology\/information\/service originating from one AICCRA core country is observed to occur in another country, thereby creating a 'pair' between country and technology\/information\/service. (e.g. 1. Benin - i. improved NextGen approach for seasonal and sub-seasonal climate forecasting; ii. communicating uncertainties in seasonal climate forecast; iii. CIS and CSA curricula.)",
+        "Narrative":"To be reported the by ESA Cluster"
+    },
+    {
+        "Indicator":"PDO Indicator 4",
+        "Cluster":"Theme 3",
+        "Question":"Note:  Number and name of country expected to be reported this year. For each country, provide the climate information services and\/ or validated climate-smart agriculture technologies that are expected to be accessible (if this last information is not provided the country will not be counted against the target). This combination, or 'pairing' needs to be reported. 'Pairing' refers to unique instances where AICCRA technology\/information\/service originating from one AICCRA core country is observed to occur in another country, thereby creating a 'pair' between country and technology\/information\/service. (e.g. 1. Benin - i. improved NextGen approach for seasonal and sub-seasonal climate forecasting; ii. communicating uncertainties in seasonal climate forecast; iii. CIS and CSA curricula.)",
+        "Narrative":"Uganda - a policy brief, \"Gender and Climate Change Vulnerability Hotspot Mapping in Agriculture, Water, and Energy Sector for Decision Support in Uganda\" was published in 2024, co-authored by the Republic of Uganda (D26481)."
+    }
+]

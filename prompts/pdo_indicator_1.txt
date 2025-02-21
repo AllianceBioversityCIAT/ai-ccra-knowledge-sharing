@@ -7,32 +7,32 @@ Having into account this meausures to put in the Overall Numerical Summary:
 [Total Target] = 33
 [Total_Achieved] = 81
 [Percentage] = Calculate(81/33)
- 
 ---
 ## You have two JSON data sources available:
+
 ### PDO1_Contributions.json:
 Contains data on the achievements and contributions of various clusters under PDO Indicator 1, which tracks how partners and stakeholders access enhanced Climate Information Services (CIS) and Climate-Smart   Agriculture (CSA) indicators. Each entry includes:
         Cluster (Region or Thematic Area)
         Targeted number of partners (Target_year_by_PMC)
         Actual number of partners achieved (End_year_achieved)
         Achieved_narrative: A detailed explanation of how CIS and CSA access has improved, including new partnerships, policy changes, training      programs, digital tools, and innovations.
+
 ### PDO1_Additional_question.json:
-    
 Contains responses to two questions related to PDO Indicator 1, which tracks how partners and stakeholders  are accessing enhanced Climate  Information Services (CIS) and Climate-Smart Agriculture (CSA) indicators.  The data is organized by clusters (regions or thematic areas) and   includes information on new partnerships (Question 1) and how existing partners have improved their access to CIS and CSA (Question 2).
-    
 ---
 ## Introduction/Overview:
-    
 Clearly state the indicator and its purpose.
+
 ## Overall Numerical Summary:
-    
 Provide a narrative that includes the overall target, the overall achieved number, and the achievement  percentage (e.g., "By the end of 2024,    AICCRA targeted the of [Total Target]  for all cluster) partners/stakeholders and reached [Total_Achieved], achieving [Percentage]% of the target."). This information will be extracted from the PDO1_Contributions.json.
-   
+
 ## New Partners in clusters
 Extract and quantify the number of new partners or stakeholders that have joined. This will be extracted from the column Answer in the file PDO1_Additional_question.json, filtered by Question "1. Out of the total target reported for PDO 1, how many partners or stakeholders are expected to be new (joined after the start date of AICCRA Additional Financing [19/03/2024])?".
+
 ## INCREASE in access to CIS and CSA in clusters
 Additionally, Extract key insights from the responses provided for Question "2. For each reported partner or stakeholder which is not new, how do you expect the INCREASE in access to CIS and CSA  compared to previous years (e.g. improvement on CIS platform, demonstrate of increased access to CSA such as enhanced scaling and dissemination approaches)?" (extract this   information from PDO1_Additional_question.json) across  different clusters in the dataset.
 Focus on identifying the main strategies, improvements, and  expansions that contributed to increased access to  Climate Information Services (CIS) and Climate-Smart Agriculture (CSA).
+
 ## Institution Types Engaged:
     Include a list of the types of institutions engaged, such as:
         • National Meteorological Services
@@ -46,8 +46,8 @@ Focus on identifying the main strategies, improvements, and  expansions that con
         • Youth Organizations
         • Farmer Cooperatives and Producer Organizations
         • NGOs and Development Partners
-    
 This list should be extracted from and/or confirmed by the achieved narratives. If additional types are mentioned, include them as well.
+
 ## Cluster-Level Achievements:
 Do not group clusters together. Each cluster must be presented in its own section/paragraph. Create separate sections for each of the following clusters:
     Senegal (Ensure to put the VALUE of End_year_achieved in the narrative)
@@ -65,9 +65,12 @@ Do not group clusters together. Each cluster must be presented in its own sectio
 For each cluster Ensure to put the VALUE of End_year_achieved in the narrative (don't summarise the thematics clusters), use the corresponding [Achieved_narrative] from PDO1_Contributions.json and put the [End_year_achieved] (Ensure put the number for each cluster, Senegal, Ghana, Zambia, Mali, Kenya, Ethiopia, EA, WA, Theme 1, Theme 2, Theme 3, Theme 4). Put the information from the PDO1_Additional_question.json file, filtering by Question choosing the value "1. Out of the total target reported for PDO 1, how many partners or stakeholders are expected to be new (joined after the start date of AICCRA Additional Financing [19/03/2024])?" and calculate or describe how many partners or stakeholders are expected to be new (extract from this text).
 Write a detailed paragraphs that describes the specific activities, partnerships, and qualitative impacts (e.g., capacity building, digital advisory tools, policy integration, spillover effects, etc.) for that cluster.
 WARNING: End_year_achieved, just mentioned in the narrative
---- 
+
+---
+
 # Conclusion:
 Generate a narrative how the overall achievements and the separate, detailed cluster-level successes demonstrate AICCRA's effectiveness in expanding access to enhanced CIS and CSA technologies and in strengthening climate resilience in agriculture with based of each achieved_narrative.
+
 # Important:
 - Don't summarise of all, give me the all relevant details of each cluster in the PDO Indicator 1
 - Do not combine or group clusters into one summary. Each cluster (12) must have its own clearly delineated section.

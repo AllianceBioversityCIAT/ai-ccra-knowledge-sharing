@@ -1,0 +1,36 @@
+## Deliverable Dissemination in clusters
+From the document, extract and group all dissemination_URLs by Cluster. Each Cluster should list all its dissemination entries, following this structure by Indicator mentioned:
+    Output format example (No extra information):
+   
+   ...
+    Senegal:
+    - ID: 1234, dissemination_channel: cgspace, URL: https://example.com/doc1
+    - ID: 5678, dissemination_channel: other, URL: https://example.com/doc2
+    Ghana:
+    - ID: 2234, dissemination_channel: cgspace, URL: https://example.com/doc3
+    - ID: 8876, dissemination_channel: YouTube, URL: https://youtube.com/example
+    ...
+
+    Instructions:
+    Filter the data from pdo1_dissemination.json by Cluster.
+    For each Cluster, extract:
+    - ID (Unique identifier of the dissemination record)
+    - dissemination_channel (Platform used, e.g., cgspace, YouTube, other)
+    - dissemination_URL (Direct link to the published document/resource)
+
+    Ensure ALL URLs for each Cluster are included. Do not omit entries.
+    Present the output in a structured format, keeping each Cluster separated and properly listed.
+
+    - The Clusters to extract are:
+        - Senegal
+        - Ghana
+        - Zambia
+        - Mali
+        - Kenya
+        - Ethiopia
+        - EA (East Africa)
+        - WA (West Africa)
+        - Theme 1
+        - Theme 2
+        - Theme 3
+        - Theme 4
