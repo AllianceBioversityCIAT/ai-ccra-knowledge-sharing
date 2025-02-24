@@ -18,7 +18,7 @@
     "Cluster": "Mali",
     "Target_year_by_PMC": 0,
     "End_year_achieved": 38890,
-    "Achieved_narrative": "A total of 46,695 recommendations were provided to farmers in Sikasso and Segou regions using RiceAdvice, including 15,877 for females (34%), covering 38,990 ha of rice fields. The recommended fertilizer application rates were 114 kg/ha N, 23 kg/ha P, and 23 kg/ha K for Segou, and 91 kg/ha N, 21 kg/ha P, and 21 kg/ha K for Sikasso, considering crop growth stages and weather conditions. The use of RiceAdvice led to a 45% increase in average rice yield, from 3.1 t/ha under farmers’ practices to 4.5 t/ha. The partial productivity of nitrogen increased to 50 kg of grain per kg of N with RiceAdvice, compared to 48 kg with farmers' practices. Farmers applied less fertilizer than recommended, with average quantities of 65 kg/ha N, 32 kg/ha P, and 12 kg/ha K, but reported better fertilizer efficiency, highlighting RiceAdvice's positive impact on yield and resource use. Further details can be found in D26381."
+    "Achieved_narrative": "A total of 46,695 recommendations were provided to farmers in Sikasso and Segou regions using RiceAdvice, including 15,877 for females (34%), covering 38,990 ha of rice fields. The recommended fertilizer application rates were 114 kg/ha N, 23 kg/ha P, and 23 kg/ha K for Segou, and 91 kg/ha N, 21 kg/ha P, and 21 kg/ha K for Sikasso, considering crop growth stages and weather conditions. The use of RiceAdvice led to a 45% increase in average rice yield, from 3.1 t/ha under farmers� practices to 4.5 t/ha. The partial productivity of nitrogen increased to 50 kg of grain per kg of N with RiceAdvice, compared to 48 kg with farmers' practices. Farmers applied less fertilizer than recommended, with average quantities of 65 kg/ha N, 32 kg/ha P, and 12 kg/ha K, but reported better fertilizer efficiency, highlighting RiceAdvice's positive impact on yield and resource use. Further details can be found in D26381."
   },
   {
     "Indicator": "IPI 1.4",
@@ -26,12 +26,5 @@
     "Target_year_by_PMC": 200000,
     "End_year_achieved": 0,
     "Achieved_narrative": "In 2024, the target was to develop fertilizer nutrient requirements for specific crops and soil combinations covering 200,000 hectares under IPI 1.4. Before being able to start field work to deliver those target , efforts have been geared towards setting up the Hub, including agreements with partners, setting up governance structures, agreements on the scope and operational model of the Hub, and investing in expertise and assets. Late 2024, following the demand-driven logic of the Hub, 11 country workshops were organized to prioritize in-country activities, resulting in agreement on a set of Wave 1 countries and priority activities in those countries, in line with IPI 1.4.\nAs a result, the 2024 targets will be carried forward and integrated into the 2025 target, ensuring that the groundwork laid this year will pave the way to accelerate our effort to achieve the set targets. The hub will leverage on its strategic country partnerships established and work towards the development of crop and geographic specific fertilizer requirement. This strategic adjustment positions the Hub to effectively meet its commitments with a well-established operational framework."
-  },
-  {
-    "Indicator": "IPI 1.4",
-    "Cluster": "Total",
-    "Target_year_by_PMC": 200000,
-    "End_year_achieved": 38890,
-    "Achieved_narrative": "NA"
   }
 ]
