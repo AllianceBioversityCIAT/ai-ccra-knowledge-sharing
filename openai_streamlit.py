@@ -38,12 +38,12 @@ def create_message(thread_id, user_message):
     )
 
 def list_vector_store(vector_id):
-    return client.beta.vector_stores.files.list(
+    return client.vector_stores.files.list(
        vector_store_id=vector_id
     )
 
 def delete_vector_store_file(vector_store_id, file_id):
-    remove_vector_file = client.beta.vector_stores.files.delete(
+    remove_vector_file = client.vector_stores.files.delete(
         vector_store_id=vector_store_id,
         file_id=file_id
     )
@@ -61,7 +61,7 @@ def upload_to_vector_store(vector_store_id, file):
         purpose="assistants"
     )
 
-    return client.beta.vector_stores.files.create(
+    return client.vector_stores.files.create(
         vector_store_id=vector_store_id,
         file_id=uploadFile.id,
     )
@@ -85,7 +85,7 @@ def vector_store(vector_store_id, file_path):
             purpose="assistants"
         )
 
-    return client.beta.vector_stores.files.create(
+    return client.vector_stores.files.create(
         vector_store_id=vector_store_id,
         file_id=uploadFile.id,
     )
